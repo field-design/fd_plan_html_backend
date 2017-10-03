@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>title</title>
+<meta name="description" content="">
+<!-- icons -->
+<link rel="shortcut icon" href="/assets/img/icon/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/img/icon/apple-touch-icon.png">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/jquery.timepicker.css">
+<!-- Modernizr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<!--- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script src="/assets/js/jquery.timepicker.min.js"></script>
+<!-- DNS prefetch -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+</head>
+
+<body id="top">
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+
+
+<!-- START global-header -->
+<header class="global-header">
+    <nav class="nav has-shadow" id="top">
+      <div class="container">
+        <div class="nav-left">
+          <span class="nav-item">
+            <h1 class="title is-5">サイト名</h1>
+            </span>
+          <a class="nav-item is-tab is-hidden-mobile" href="/" target="_blank">
+              <i class="fa fa-fw fa-external-link"></i>
+              サイトを表示
+          </a>
+          <a class="nav-item is-tab is-hidden-mobile" href="/admin">
+              <i class="fa fa-fw fa-home"></i>
+              HOME
+          </a>
+        </div>
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu">
+          <span class="nav-item">
+              <a class="button is-white" href="/assets/docs/manual.pdf" target="_blank">
+                  <i class="fa fa-fw fa-file-text"></i>
+                  操作マニュアル
+              </a>
+              <a class="button is-light" href="/admins">
+                  <i class="fa fa-fw fa-user"></i>
+                  プロフィール
+              </a>
+              <a class="button" href="/login/">
+                <i class="fa fa-fw fa-sign-out"></i>
+                ログアウト
+              </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+</header>
+<!-- END global-header -->
+
+
+<!-- START global-nav -->
+<div class="global-nav">
+    <div class="container">
+
+    </div>
+</div>
+<!-- END global-nav -->
+
+
+<div class="container">
+<!-- START main -->
+<main>
+
+    <div class="section">
+        <h2 class="title is-4">商品管理</h2>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <a class="button is-info is-outlined is-medium is-fullwidth" href="/product/post">
+                    <span class="icon">
+                        <i class="fa fa-plus-circle"></i>
+                    </span>
+                    <span>商品追加</span>
+                </a>
+            </div>
+            <div class="tile is-parent">
+                <a class="button is-info is-outlined is-medium is-fullwidth" href="/product">
+                    <span class="icon">
+                        <i class="fa fa-list-ul"></i>
+                    </span>
+                    <span>商品一覧</span>
+                </a>
+            </div>
+            <!-- <div class="tile is-parent">
+                <a class="button is-medium is-fullwidth" href="/standard">
+                    <span class="icon">
+                        <i class="fa fa-cog"></i>
+                    </span>
+                    <span>規格管理</span>
+                </a>
+            </div> -->
+        </div>
+
+    </div>
+    <div class="section">
+        <h2 class="title is-4">新規受注</h2>
+        <table class="order-list table">
+          <thead>
+            <tr>
+              <th class="order-image"></th>
+              <th class="order-date">受注日</th>
+              <th class="order-number">申込番号</th>
+              <th class="order-name">お名前</th>
+              <th class="order-payment">支払方法</th>
+              <th class="order-amount">合計金額</th>
+              <th class="order-status">対応状況</th>
+              <th class="order-edit">詳細</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="order-image">
+                  <p class="image is-64x64">
+                    <img src="http://bulma.io/images/placeholders/128x128.png">
+                  </p>
+              </td>
+              <td class="order-date">2017/03/01<br />15:00</td>
+              <td class="order-number">order000023</td>
+              <td class="order-name">山田 太朗</td>
+              <td class="order-payment">クレジットカード</td>
+              <td class="order-amount">128,000</td>
+              <td class="order-status">入金待ち</td>
+              <td class="order-edit"><a href="/order/edit">詳細</a></td>
+            </tr>
+            <tr>
+                <td class="order-image">
+                    <p class="image is-64x64">
+                      <img src="http://bulma.io/images/placeholders/128x128.png">
+                    </p>
+                </td>
+              <td class="order-date">2017/03/01<br />14:00</td>
+              <td class="order-number">order000021</td>
+              <td class="order-name">山田 太朗</td>
+              <td class="order-payment">コンビニ</td>
+              <td class="order-amount">6,000</td>
+              <td class="order-status">キャンセル</td>
+              <td class="order-edit"><a href="/order/edit">詳細</a></td>
+            </tr>
+            <tr>
+                <td class="order-image">
+                    <p class="image is-64x64">
+                      <img src="http://bulma.io/images/placeholders/128x128.png">
+                    </p>
+                </td>
+              <td class="order-date">2017/03/01<br />14:00</td>
+              <td class="order-number">order000020</td>
+              <td class="order-name">山田 太朗</td>
+              <td class="order-payment">コンビニ</td>
+              <td class="order-amount">6,000</td>
+              <td class="order-status">入金済み</td>
+              <td class="order-edit"><a href="/order/edit">詳細</a></td>
+            </tr>
+            <tr>
+                <td class="order-image">
+                    <p class="image is-64x64">
+                      <img src="http://bulma.io/images/placeholders/128x128.png">
+                    </p>
+                </td>
+              <td class="order-date">2017/03/01<br />14:00</td>
+              <td class="order-number">order000019</td>
+              <td class="order-name">山田 太朗</td>
+              <td class="order-payment">コンビニ</td>
+              <td class="order-amount">6,000</td>
+              <td class="order-status">決済処理中</td>
+              <td class="order-edit"><a href="/order/edit">詳細</a></td>
+            </tr>
+            <tr>
+                <td class="order-image">
+                    <p class="image is-64x64">
+                      <img src="http://bulma.io/images/placeholders/128x128.png">
+                    </p>
+                </td>
+              <td class="order-date">2017/03/01<br />14:00</td>
+              <td class="order-number">order000018</td>
+              <td class="order-name">山田 太朗</td>
+              <td class="order-payment">コンビニ</td>
+              <td class="order-amount">6,000</td>
+              <td class="order-status">承認待ち</td>
+              <td class="order-edit"><a href="/order/edit">詳細</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="control">
+          <a class="button is-primary is-pulled-right" href="/order">
+            <span class="icon">
+              <i class="fa fa-angle-right"></i>
+            </span>
+            <span>さらに見る</span>
+          </a>
+          </p>
+    </div>
+    <div class="section">
+        <h2 class="title is-4">今月の売上</h2>
+        <div class="section">
+            <h3 class="title is-5">2017/03</h3>
+            <nav class="level">
+              <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">合計売上</p>
+                    <p class="title">1,203,456円</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">合計件数</p>
+                    <p class="title">300</p>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <div class="section">
+            <h3 class="title is-5">商品別 TOP5</h3>
+            <canvas id="myChart" width="400" height="300"></canvas>
+        </div>
+        <p class="control">
+          <a class="button is-primary is-pulled-right" href="/sales">
+            <span class="icon">
+              <i class="fa fa-angle-right"></i>
+            </span>
+            <span>さらに見る</span>
+          </a>
+          </p>
+    </div>
+
+</main>
+<!-- END main -->
+</div>
+
+<div class="section sitemap is-hidden-desktop">
+<aside class="menu">
+
+<ul class="menu-list">
+  <li>
+    <p class="menu-label">商品編集</p>
+    <ul>
+      <li><a class="is-active" href="/product/post">基本情報</a></li>
+      <li><a href="/product/post">代金</a></li>
+      <li><a href="/product/post">プラン詳細</a></li>
+      <li><a href="/product/post">集合場所</a></li>
+      <li><a href="/product/post">注意事項・その他</a></li>
+      <li><a href="/product/post">取消料</a></li>
+      <li><a href="/product/post">お申し込み</a></li>
+      <li><a href="/product/post">プラン内容</a></li>
+      <!-- <li><a href="/product/post">エリア・カテゴリ</a></li> -->
+      <li><a href="/product/post">質問事項</a></li>
+      <li><a href="/product/post">公開設定</a></li>
+    </ul>
+  </li>
+</ul>
+  <p class="menu-label">
+    一般
+  </p>
+  <ul class="menu-list">
+    <li><a href="/">ダッシュボード</a></li>
+  </ul>
+  <p class="menu-label">
+    商品管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/product">商品一覧</a></li>
+    <li><a href="/product/post">商品追加</a></li>
+    <li><a href="/product/price">代金設定</a></li>
+    <li><a href="/product/calendar">予約カレンダー</a></li>
+  </ul>
+  <p class="menu-label">
+    固定ページ
+  </p>
+  <ul class="menu-list">
+    <li><a href="/page/top">トップページ</a></li>
+    <li><a href="/page/top_en">トップページ（EN）</a></li>
+  </ul>
+  <p class="menu-label">
+    受注管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/order">受注一覧</a></li>
+  </ul>
+  <p class="menu-label">
+    売上管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/sales">売上一覧</a></li>
+  </ul>
+  <p class="menu-label">
+    設定
+  </p>
+  <ul class="menu-list">
+    <li><a href="/admins">プロフィール一覧</a></li>
+  </ul>
+  <p class="menu-label">
+    その他
+  </p>
+  <ul class="menu-list">
+    <li><a href="/promotion/banner">バナー掲載について</a></li>
+  </ul>
+</aside>
+
+</div>
+
+<!-- START global-footer -->
+<footer class="global-footer section">
+  <div class="container">
+    <div class="has-text-centered">
+      <p class="copyright">
+          © <script type="text/javascript">myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear);</script> 株式会社フィールドデザイン<br />
+          操作方法についてのお問い合わせ先：026-227-8955
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- END global-footer -->
+
+
+<!-- WEB Fonts -->
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" data-webfonts />
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" data-webfonts />
+
+
+
+
+<!-- Optional Stylesheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<!-- Common Script -->
+<script src="https://bulma.io/javascript/bulma.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script src="/assets/js/common.min.js"></script>
+<script src="/assets/js/custom.min.js"></script>
+
+
+<!-- Google map javascript api v3 -->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDaVeeyDXpwXIBedG9iyhnt3bhoY_WBGpY"></script>
+
+
+<!-- Page Script -->
+
+<script>
+  function initMap() {
+
+    // マップの初期化
+    var map = new google.maps.Map(document.getElementById('location-map'), {
+      zoom: 13,
+      center: {lat: 36.38992, lng: 139.06065}
+    });
+
+    // クリックイベントを追加
+    map.addListener('click', function(e) {
+      getClickLatLng(e.latLng, map);
+    });
+  }
+
+  function getClickLatLng(lat_lng, map) {
+
+    // 座標を表示
+    document.getElementById('lat').textContent = lat_lng.lat();
+    document.getElementById('lng').textContent = lat_lng.lng();
+
+    // マーカーを設置
+    var marker = new google.maps.Marker({
+      position: lat_lng,
+      map: map
+    });
+
+    // 座標の中心をずらす
+    // http://syncer.jp/google-maps-javascript-api-matome/map/method/panTo/
+    map.panTo(lat_lng);
+  }
+</script>
+<script>
+    // 並び替え機能
+    $( function() {
+        $( ".sortable" ).sortable();
+        $( ".sortable" ).disableSelection();
+        $( ".button.remove" ).click(function() {
+            $( this ).parent().remove();
+        });
+    } );
+
+    // アコーディオン
+    $(document).ready( function() {
+    	$('.js-accordion').accordion({
+            header: ".conts-ttl",
+            active: 2,
+            heightStyle: "content",
+            icons: {
+                header: "ui-icon-pin-w",
+                activeHeader: "ui-icon-circle-arrow-s"
+            },
+            change: function(event, ui) {
+        		alert(ui.newContent.context.id);
+        	}
+        });
+    });
+</script>
+<script>
+    $(function() {
+        $('.js-datepicker').datepicker();
+        $('.js-timepicker').timepicker({
+            'timeFormat': 'H:i',
+            'scrollDefault': 'now',
+            'step': 15
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ["商品名1商品名1商品名1", "商品名2商品名2商品名2", "商品名3商品名3商品名3", "商品名4商品名4商品名4", "商品名5商品名5商品名5"],
+        datasets: [{
+            data: [50000, 19000, 30000, 50000, 20000, 30000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+
+
+
+</body>
+</html>

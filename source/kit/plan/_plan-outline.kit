@@ -1,0 +1,69 @@
+<section class="input-area message plan-outline">
+    <h2 class="conts-ttl subtitle message-header">
+        基本情報
+        <span class="icon">
+          <i class="fa fa-plus-circle"></i>
+        </span>
+    </h2>
+    <div class="conts-body message-body">
+        <div class="control">
+            <label class="label">サブタイトル</label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                <input class="input limited" type="text" placeholder="例：蜃気楼ガイドと行く！" maxlength="64">
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">タイトル<span class="must">必須</span></label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">32</span>文字</strong></div>
+                <input class="input is-danger is-bold limited" type="text" placeholder="例：しんきろうロードサイクリングプラン" maxlength="32">
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">説明文<span class="must">必須</span></label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                <textarea class="textarea is-danger limited" placeholder="例：蜃気楼が見える街として有名な「魚津市」でのレンタサイクルプラン" maxlength="64"></textarea>
+            </div>
+        </div>
+
+        <div class="control numbering">
+            <label class="label">
+                メイン画像<span class="must">必須</span>
+                <span class="help">横幅1,000px以上の画像を1枚以上登録してください。横長画像を推奨。最大5枚。</span>
+            </label>
+            <div class="notification main-image">
+                <button class="delete" onclick="((this).parentNode.remove())"></button>
+                <figure class="image numbered">
+                    <img src="http://placehold.jp/800x600.png">
+                </figure>
+            </div>
+            <div class="notification main-image">
+                <button class="delete" onclick="((this).parentNode.remove())"></button>
+                <figure class="image numbered">
+                    <img src="http://placehold.jp/800x600.png">
+                </figure>
+            </div>
+            <div class="control">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label class="button is-danger" for="main_img">画像を追加</label>
+                    <input type="file" name="main_img" id="main_img" style="display:none;">
+                </form>
+            </div>
+        </div>
+
+        <div class="control save-point">
+            <p class="control has-addons has-addons-centered">
+                <a class="button is-success">
+                    <span class="icon">
+                        <i class="fa fa-save"></i>
+                    </span>
+                    <span>変更を保存</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</section>

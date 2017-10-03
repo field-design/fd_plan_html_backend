@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- @import '/source/kit/head' -->
+<body id="top">
+<!-- @import '/source/kit/gtm' -->
+
+<!-- @import '/source/kit/global-header' -->
+
+<!-- @import '/source/kit/global-nav' -->
+
+<div class="container section">
+
+    <div class="breadcrumbs mb-30">
+        <div class="notification">
+            <ul class="is-clearfix">
+              <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+              <li><span>プロフィール設定</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column is-3 is-hidden-mobile">
+
+<!-- @import '/source/kit/side' -->
+        </div>
+        <div class="column is-9">
+<!-- START main -->
+<main>
+
+    <h2 class="title is-3">プロフィール設定</h2>
+    <span class="tag is-light">日本語</span>
+
+    <hr>
+
+    <section class="profile">
+        <h2 class="conts-ttl subtitle">
+            会社情報
+        </h2>
+
+        <div class="control">
+            <label class="label">会社名<span class="must">必須</span></label>
+            <p class="control">
+              <input class="input is-danger" type="text" placeholder="例：株式会社フィールドデザイン">
+            </p>
+        </div>
+
+        <div class="control">
+            <label class="label">表示名</label>
+            <p class="control">
+                <input class="input is-outlined" type="text" placeholder="例：フィールドデザイン">
+            </p>
+        </div>
+
+        <div class="control">
+            <label class="label">画像</label>
+            <p class="control">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label class="button is-outlined" for="main_img"><i class="fa fa-fw fa-picture-o"></i>画像を選択してください</label>
+                    <input type="file" name="main_img" id="main_img" style="display:none;">
+                </form>
+            </p>
+        </div>
+
+        <div class="control">
+            <label class="label">ロゴマーク</label>
+            <p class="control">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label class="button is-outlined" for="logo_img"><i class="fa fa-fw fa-picture-o"></i>画像を選択してください</label>
+                    <input type="file" name="logo_img" id="logo_img" style="display:none;">
+                </form>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="control">
+            <label class="label">郵便番号<span class="must">必須</span></label>
+            <div class="columns">
+                <div class="control is-horizontal column is-4">
+                    <div class="control is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input is-danger" type="number" min="0" placeholder="例：123">
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="input is-danger" type="number" min="0" placeholder="例：4567">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <label class="label">都道府県<span class="must">必須</span></label>
+            <p class="control">
+              <span class="select">
+                <select class="is-danger">
+                    <option value="" selected>都道府県</option>
+                    <option value="北海道">北海道</option>
+                    <option value="青森県">青森県</option>
+                    <option value="岩手県">岩手県</option>
+                    <option value="宮城県">宮城県</option>
+                    <option value="秋田県">秋田県</option>
+                    <option value="山形県">山形県</option>
+                    <option value="福島県">福島県</option>
+                    <option value="茨城県">茨城県</option>
+                    <option value="栃木県">栃木県</option>
+                    <option value="群馬県">群馬県</option>
+                    <option value="埼玉県">埼玉県</option>
+                    <option value="千葉県">千葉県</option>
+                    <option value="東京都">東京都</option>
+                    <option value="神奈川県">神奈川県</option>
+                    <option value="新潟県">新潟県</option>
+                    <option value="富山県">富山県</option>
+                    <option value="石川県">石川県</option>
+                    <option value="福井県">福井県</option>
+                    <option value="山梨県">山梨県</option>
+                    <option value="長野県">長野県</option>
+                    <option value="岐阜県">岐阜県</option>
+                    <option value="静岡県">静岡県</option>
+                    <option value="愛知県">愛知県</option>
+                    <option value="三重県">三重県</option>
+                    <option value="滋賀県">滋賀県</option>
+                    <option value="京都府">京都府</option>
+                    <option value="大阪府">大阪府</option>
+                    <option value="兵庫県">兵庫県</option>
+                    <option value="奈良県">奈良県</option>
+                    <option value="和歌山県">和歌山県</option>
+                    <option value="鳥取県">鳥取県</option>
+                    <option value="島根県">島根県</option>
+                    <option value="岡山県">岡山県</option>
+                    <option value="広島県">広島県</option>
+                    <option value="山口県">山口県</option>
+                    <option value="徳島県">徳島県</option>
+                    <option value="香川県">香川県</option>
+                    <option value="愛媛県">愛媛県</option>
+                    <option value="高知県">高知県</option>
+                    <option value="福岡県">福岡県</option>
+                    <option value="佐賀県">佐賀県</option>
+                    <option value="長崎県">長崎県</option>
+                    <option value="熊本県">熊本県</option>
+                    <option value="大分県">大分県</option>
+                    <option value="宮崎県">宮崎県</option>
+                    <option value="鹿児島県">鹿児島県</option>
+                    <option value="沖縄県">沖縄県</option>
+                </select>
+              </span>
+            </p>
+
+            <label class="label">市区町村、丁目・番地、ビル・マンション名等<span class="must">必須</span></label>
+            <p class="control">
+                <input class="input is-danger" type="text" placeholder="例：〇〇市〇〇 1丁目123 〇〇ビル101">
+            </p>
+
+        </div>
+
+        <hr>
+
+        <div class="control">
+            <label class="label">電話番号<span class="must">必須</span></label>
+            <div class="columns">
+                <div class="control is-horizontal column is-6">
+                    <div class="control is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input is-danger is-outlined" type="number" min="0" placeholder="例：123">
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="input is-danger is-outlined" type="number" min="0" placeholder="例：4567">
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="input is-danger is-outlined" type="number" min="0" placeholder="例：8901">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">FAX番号</label>
+            <div class="columns">
+                <div class="control is-horizontal column is-6">
+                    <div class="control is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input" type="number" min="0" placeholder="例：123">
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="input" type="number" min="0" placeholder="例：4567">
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="input" type="number" min="0" placeholder="例：8901">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">営業時間<span class="must">必須</span></label>
+            <p class="control">
+              <input class="input is-danger" type="text" placeholder="例：平日9:00〜17:00">
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="control">
+            <label class="label">ホームページ URL</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="例：http://example.com">
+            </p>
+        </div>
+
+        <div class="control">
+            <label class="label">Facebookページ URL</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="例：http://example.com">
+            </p>
+        </div>
+
+        <div class="control">
+            <label class="label">Twitter URL</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="例：http://example.com">
+            </p>
+        </div>
+
+        <div class="control">
+            <label class="label">Instagram URL</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="例：http://example.com">
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="staff">
+        <h2 class="conts-ttl subtitle">
+            担当者情報
+        </h2>
+
+        <div class="control">
+            <label class="label">担当者名<span class="must">必須</span></label>
+            <div class="columns">
+                <div class="control is-horizontal column is-6">
+                    <div class="control is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input is-danger is-outlined" type="text" placeholder="姓">
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="input is-danger is-outlined" type="text" placeholder="名">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">フリガナ<span class="must">必須</span></label>
+            <div class="columns">
+                <div class="control is-horizontal column is-6">
+                    <div class="control is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input is-danger" type="text" placeholder="セイ">
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="input is-danger" type="text" placeholder="メイ">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">メールアドレス<span class="must">必須</span></label>
+            <p class="control">
+                <input class="input is-danger is-outlined" type="email" placeholder="例：sample@firld-desing.jp">
+            </p>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section class="agency">
+        <h2 class="conts-ttl subtitle">
+            旅行業について
+        </h2>
+        <div class="control">
+            <label class="label">旅行業に基づく旅行商品の取り扱い<span class="must">必須</span></label>
+            <p class="control">
+                <label class="radio">
+                    <input type="radio" name="travel-agency-available" value="1" checked="checked"> 取り扱いあり
+                </label>
+                <label class="radio">
+                    <input type="radio" name="travel-agency-available" value="0"> 取り扱いなし
+                </label>
+            </p>
+        </div>
+
+        <div class="travel-agency-input">
+            <div class="control">
+
+                <label class="label">登録先<span class="must">必須</span></label>
+                <p class="control">
+                  <span class="select">
+                    <select class="is-danger">
+                        <option value="" selected>選択してください</option>
+                        <option value="観光庁長官">観光庁長官</option>
+                        <option value="北海道知事">北海道知事</option>
+                        <option value="青森県知事">青森県知事</option>
+                        <option value="岩手県知事">岩手県知事</option>
+                        <option value="宮城県知事">宮城県知事</option>
+                        <option value="秋田県知事">秋田県知事</option>
+                        <option value="山形県知事">山形県知事</option>
+                        <option value="福島県知事">福島県知事</option>
+                        <option value="茨城県知事">茨城県知事</option>
+                        <option value="栃木県知事">栃木県知事</option>
+                        <option value="群馬県知事">群馬県知事</option>
+                        <option value="埼玉県知事">埼玉県知事</option>
+                        <option value="千葉県知事">千葉県知事</option>
+                        <option value="東京都知事">東京都知事</option>
+                        <option value="神奈川県知事">神奈川県知事</option>
+                        <option value="新潟県知事">新潟県知事</option>
+                        <option value="富山県知事">富山県知事</option>
+                        <option value="石川県知事">石川県知事</option>
+                        <option value="福井県知事">福井県知事</option>
+                        <option value="山梨県知事">山梨県知事</option>
+                        <option value="長野県知事">長野県知事</option>
+                        <option value="岐阜県知事">岐阜県知事</option>
+                        <option value="静岡県知事">静岡県知事</option>
+                        <option value="愛知県知事">愛知県知事</option>
+                        <option value="三重県知事">三重県知事</option>
+                        <option value="滋賀県知事">滋賀県知事</option>
+                        <option value="京都府知事">京都府知事</option>
+                        <option value="大阪府知事">大阪府知事</option>
+                        <option value="兵庫県知事">兵庫県知事</option>
+                        <option value="奈良県知事">奈良県知事</option>
+                        <option value="和歌山県知事">和歌山県知事</option>
+                        <option value="鳥取県知事">鳥取県知事</option>
+                        <option value="島根県知事">島根県知事</option>
+                        <option value="岡山県知事">岡山県知事</option>
+                        <option value="広島県知事">広島県知事</option>
+                        <option value="山口県知事">山口県知事</option>
+                        <option value="徳島県知事">徳島県知事</option>
+                        <option value="香川県知事">香川県知事</option>
+                        <option value="愛媛県知事">愛媛県知事</option>
+                        <option value="高知県知事">高知県知事</option>
+                        <option value="福岡県知事">福岡県知事</option>
+                        <option value="佐賀県知事">佐賀県知事</option>
+                        <option value="長崎県知事">長崎県知事</option>
+                        <option value="熊本県知事">熊本県知事</option>
+                        <option value="大分県知事">大分県知事</option>
+                        <option value="宮崎県知事">宮崎県知事</option>
+                        <option value="鹿児島県知事">鹿児島県知事</option>
+                        <option value="沖縄県知事">沖縄県知事</option>
+                    </select>
+                  </span>
+                </p>
+
+                <label class="label">企画旅行業者の登録番号<span class="must">必須</span></label>
+                <p class="control has-addons">
+                    <span class="select">
+                      <select class="is-danger">
+                          <option value="" selected>選択してください</option>
+                          <option value="旅行業第1種">旅行業第1種</option>
+                          <option value="旅行業第2種">旅行業第2種</option>
+                          <option value="旅行業第2種">旅行業第3種</option>
+                          <option value="地域限定旅行業">地域限定旅行業</option>
+                      </select>
+                    </span>
+                    <span class="button is-disabled">第</span>
+                    <input class="input is-danger" type="number" placeholder="例：1">
+                    <span class="button is-disabled">号</span>
+                </p>
+
+
+
+                <label class="label">氏名又は名称<span class="must">必須</span></label>
+                <p class="control">
+                    <input class="input is-danger" type="text" placeholder="例：フィールドデザイン">
+                </p>
+
+                <label class="label">本社所在地<span class="must">必須</span></label>
+                <p class="control">
+                    <input class="input is-danger" type="text" placeholder="例：愛知県名古屋市中村区名駅3丁目21番7号　名古屋三交ビル9階">
+                </p>
+
+                <label class="label">旅行取扱管理者<span class="must">必須</span></label>
+                <p class="control">
+                    <input class="input is-danger" type="text" placeholder="例：観光 健斗">
+                </p>
+
+                <label class="label">営業所1</label>
+                <p class="control">
+                    <input class="input" type="text" placeholder="例：愛知県名古屋市中村区名駅3丁目21番7号　名古屋三交ビル9階">
+                </p>
+
+                <label class="label">営業所2</label>
+                <p class="control">
+                    <input class="input" type="text" placeholder="例：愛知県名古屋市中村区名駅3丁目21番7号　名古屋三交ビル9階">
+                </p>
+
+                <label class="label">営業所3</label>
+                <p class="control">
+                    <input class="input" type="text" placeholder="例：愛知県名古屋市中村区名駅3丁目21番7号　名古屋三交ビル9階">
+                </p>
+
+                <label class="label">約款<span class="must">必須</span></label>
+                <p class="control">
+                    <label class="radio">
+                        <input type="radio" name="agreement_type" value="default" checked="checked"> 標準旅行業約款を使用する
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="agreement_type" value="pdf"> PDFファイルをアップロードする
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="agreement_type" value="url"> URLリンクを入力する
+                    </label>
+                </p>
+
+                <div class="control agreement-pdf">
+                    <label class="label">約款 PDF<span class="must">必須</span></label>
+                    <p class="control has-addons">
+                      <input class="input" type="file" placeholder="Find a repository">
+                    </p>
+                </div>
+
+                <div class="control agreement-url">
+                    <label class="label">約款 URL<span class="must">必須</span></label>
+                    <p class="control">
+                      <input class="input" type="text" placeholder="例：http://example.com">
+                    </p>
+                </div>
+
+                <label class="label">旅行条件書<span class="must">必須</span></label>
+                <p class="control">
+                    <label class="radio">
+                        <input type="radio" name="condition_type" value="pdf" checked="checked"> PDFファイルをアップロードする
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="condition_type" value="url"> URLリンクを入力する
+                    </label>
+                </p>
+
+                <div class="control condition-pdf">
+                    <label class="label">旅行条件書 PDF<span class="must">必須</span></label>
+                    <p class="control has-addons">
+                      <input class="input" type="file" placeholder="Find a repository">
+                    </p>
+                </div>
+
+                <div class="control condition-url">
+                    <label class="label">旅行条件書 URL<span class="must">必須</span></label>
+                    <p class="control">
+                      <input class="input" type="text" placeholder="例：http://example.com">
+                    </p>
+                </div>
+
+                <label class="label">プライバシーポリシー<span class="must">必須</span></label>
+                <p class="control">
+                    <label class="radio">
+                        <input type="radio" name="policy_type" value="pdf" checked="checked"> PDFファイルをアップロードする
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="policy_type" value="url"> URLリンクを入力する
+                    </label>
+                </p>
+
+                <div class="control policy-pdf">
+                    <label class="label">プライバシーポリシー PDF<span class="must">必須</span></label>
+                    <p class="control has-addons">
+                      <input class="input" type="file" placeholder="Find a repository">
+                    </p>
+                </div>
+
+                <div class="control policy-url">
+                    <label class="label">プライバシーポリシー URL<span class="must">必須</span></label>
+                    <p class="control">
+                      <input class="input" type="text" placeholder="例：http://example.com">
+                    </p>
+                </div>
+
+                <label class="label">旅行業務取扱料金表<span class="must">必須</span></label>
+                <p class="control">
+                    <label class="radio">
+                        <input type="radio" name="charges_type" value="pdf" checked="checked"> PDFファイルをアップロードする
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="charges_type" value="url"> URLリンクを入力する
+                    </label>
+                </p>
+
+                <div class="control charges-pdf">
+                    <label class="label">旅行業務取扱料金表 PDF<span class="must">必須</span></label>
+                    <p class="control has-addons">
+                      <input class="input" type="file" placeholder="Find a repository">
+                    </p>
+                </div>
+
+                <div class="control charges-url">
+                    <label class="label">旅行業務取扱料金表 URL<span class="must">必須</span></label>
+                    <p class="control">
+                      <input class="input" type="text" placeholder="例：http://example.com">
+                    </p>
+                </div>
+
+                <label class="label">加入旅行業協会名（加入会社のみ）</label>
+                <p class="control">
+                    <input class="input" type="text" placeholder="例：一般社団法人日本旅行業協会（JATA）正会員">
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="cancel">
+        <h2 class="conts-ttl subtitle">
+            取消料
+        </h2>
+        <div class="conts-body">
+
+            <label class="label">
+                料率<span class="must">必須</span>
+                <span class="help">最大10件まで追加可能</span>
+            </label>
+            <div class="sortable">
+                <p class="control has-addons">
+                    <a class="button">
+                      <i class="fa fa-navicon"></i>
+                    </a>
+                  <input class="input" type="text" placeholder="例：2日前">
+                  <span class="select">
+                    <select>
+                      <option>100%</option>
+                      <option>90%</option>
+                      <option>80%</option>
+                      <option>70%</option>
+                      <option>60%</option>
+                      <option>50%</option>
+                      <option>40%</option>
+                      <option>30%</option>
+                      <option>20%</option>
+                      <option>10%</option>
+                      <option>なし</option>
+                    </select>
+                  </span>
+                  <a class="button" onclick="((this).parentNode.remove())">
+                    <i class="fa fa-close"></i>
+                  </a>
+                </p>
+                <p class="control has-addons">
+                    <a class="button">
+                      <i class="fa fa-navicon"></i>
+                    </a>
+                  <input class="input" type="text" placeholder="例：2日前">
+                  <span class="select">
+                    <select>
+                      <option>100%</option>
+                      <option>90%</option>
+                      <option>80%</option>
+                      <option>70%</option>
+                      <option>60%</option>
+                      <option>50%</option>
+                      <option>40%</option>
+                      <option>30%</option>
+                      <option>20%</option>
+                      <option>10%</option>
+                      <option>なし</option>
+                    </select>
+                  </span>
+                  <a class="button" onclick="((this).parentNode.remove())">
+                    <i class="fa fa-close"></i>
+                  </a>
+                </p>
+            </div>
+            <p class="control add-btn">
+              <a class="button is-primary">
+                <span class="icon">
+                  <i class="fa fa-plus-circle"></i>
+                </span>
+                <span>料率を追加</span>
+              </a>
+            </p>
+
+            <label class="label">
+                注釈<span class="must">必須</span>
+                <span class="help">最大10件まで追加可能</span>
+            </label>
+            <div class="control sortable">
+                <p class="control has-addons">
+                    <a class="button is-white">
+                      <i class="fa fa-navicon"></i>
+                    </a>
+                    <textarea class="textarea is-expanded" style="min-height: 60px; min-width: auto;" placeholder="例：オプショナルプランも上記取消料率による取消料が利用日を基準として別途適用されます。ただし、旅行開始後の取消料は100％となります。"></textarea>
+                    <a class="button is-white">
+                      <i class="fa fa-close"></i>
+                    </a>
+                </p>
+            </div>
+            <p class="control add-btn">
+              <a class="button is-primary">
+                <span class="icon">
+                  <i class="fa fa-plus-circle"></i>
+                </span>
+                <span>行を追加</span>
+              </a>
+            </p>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="payment">
+        <h2 class="conts-ttl subtitle">
+            決済関連設定
+        </h2>
+
+        <label class="label">取扱決済<span class="must">必須</span></label>
+        <p class="control">
+            <label class="checkbox">
+                <input type="checkbox" name="payment_type_UseCredit" value="UseCredit" checked="checked"> クレジットカード
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="payment_type_UseCvs" value="UseCvs" checked="checked"> コンビニ
+            </label>
+        </p>
+
+        <section class="receipt">
+            <h3 class="conts-ttl subtitle is-6">
+                コンビニレシートに記載の問い合わせ先
+            </h3>
+            <div class="control has-icon">
+                <label class="label">問い合わせ先<span class="must">必須</span></label>
+                <p class="control">
+                    <input class="input is-danger" type="text" placeholder="例：株式会社フィールドデザイン">
+                    <span class="icon is-small">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="control has-icon">
+                <label class="label">電話番号<span class="must">必須</span><p class="help is-danger">最大半角12文字</p></label>
+                <p class="control">
+                    <input class="input is-danger" type="text" maxlength="12" placeholder="例：05037754727">
+                    <span class="icon is-small">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="control has-icon">
+                <label class="label">受付時間<span class="must">必須</span><p class="help is-danger">最大半角11文字</p></label>
+                <p class="control">
+                    <input class="input is-danger" type="text" maxlength="11" placeholder="例：10：00-18：30">
+                    <span class="icon is-small">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <hr>
+
+    <section class="payment-gmo">
+        <h2 class="conts-ttl subtitle">
+            GMOペイメントゲートウェイ接続設定
+        </h2>
+
+        <div class="control has-icon">
+            <label class="label">サイトID<span class="must">必須</span></label>
+            <p class="control">
+                <input class="input is-danger" type="text" placeholder="例：mst2000008479">
+                <span class="icon is-small">
+                    <i class="fa fa-user"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="control has-icon">
+            <label class="label">ショップID<span class="must">必須</span></label>
+            <p class="control">
+                <input class="input is-danger" type="text" placeholder="例：9101003936690">
+                <span class="icon is-small">
+                    <i class="fa fa-user"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="control has-icon">
+            <label class="label">パスワード<span class="must">必須</span></label>
+            <p class="control">
+                <input class="input is-danger" type="text" placeholder="例：2kkm86ac">
+                <span class="icon is-small">
+                    <i class="fa fa-lock"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="control has-icon">
+            <label class="label">決済選択呼出しAPI 接続先URL<span class="must">必須</span></label>
+            <p class="control">
+                <input class="input is-danger" type="text" placeholder="例：https://p01.mul-pay.jp/link/9101003936690/Multi/Entry">
+                <span class="icon is-small">
+                    <i class="fa fa-globe"></i>
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="region">
+        <h2 class="conts-ttl subtitle">
+            言語設定
+        </h2>
+        <div class="control">
+            <label class="label">表示言語</label>
+            <p class="control">
+                <label class="radio">
+                    <input type="radio" name="language-select" value="ja" checked> 日本語
+                </label>
+                <label class="radio">
+                    <input type="radio" name="language-select" value="en"> 英語
+                </label>
+                <!-- <label class="radio">
+                    <input type="radio" name="language-select" value="tw"> 台湾語
+                </label> -->
+            </p>
+        </div>
+        <div class="control">
+            <label class="label">スラッグ</label>
+            <span class="help">日本語版プロフィールと英語版プロフィールの紐付けに使用します。半角英字で入力して下さい。</span>
+            <p class="control">
+                <input class="input" type="text" placeholder="例：kanko-pro">
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="password">
+        <h2 class="conts-ttl subtitle">
+            パスワード再設定
+        </h2>
+
+        <div class="control has-icon">
+            <label class="label">新しいパスワード</label>
+            <p class="control">
+                <input class="input" type="password" placeholder="●●●●●●●●">
+                <span class="icon is-small">
+                    <i class="fa fa-lock"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="control has-icon">
+            <label class="label">パスワードの確認</label>
+            <p class="control">
+                <input class="input" type="password" placeholder="●●●●●●●●">
+                <span class="icon is-small">
+                    <i class="fa fa-lock"></i>
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <div class="control save-point">
+        <p class="has-text-centered">
+            <a class="button is-success">
+                <span class="icon">
+                    <i class="fa fa-save"></i>
+                </span>
+                <span>変更を保存</span>
+            </a>
+        </p>
+    </div>
+</main>
+<!-- END main -->
+        </div>
+    </div>
+</div>
+
+<!-- @import '/source/kit/global-footer' -->
+
+<!-- @import '/source/kit/fonts' -->
+
+
+
+<!-- @import '/source/kit/commonscript' -->
+
+<!-- @import '/source/kit/gmap' -->
+
+<!-- Page Script -->
+
+<script>
+    // 並び替え機能
+    $( function() {
+        $( ".sortable" ).sortable();
+        $( ".sortable" ).disableSelection();
+        $( ".button.remove" ).click(function() {
+            $( this ).parent().remove();
+        });
+    } );
+
+    // アコーディオン
+    $(document).ready( function() {
+    	$('.js-accordion').accordion({
+            header: ".conts-ttl",
+            active: 2,
+            heightStyle: "content",
+            icons: {
+                header: "ui-icon-pin-w",
+                activeHeader: "ui-icon-circle-arrow-s"
+            },
+            change: function(event, ui) {
+        		alert(ui.newContent.context.id);
+        	}
+        });
+    });
+</script>
+<script>
+    $(function() {
+        $('.js-datepicker').datepicker();
+        $('.js-timepicker').timepicker({
+            'timeFormat': 'H:i',
+            'scrollDefault': 'now',
+            'step': 15
+        });
+    });
+</script>
+
+<!-- <script src="//cdn.ckeditor.com/4.5.8/basic/ckeditor.js"></script>
+<script>
+  CKEDITOR.replace('ckeditor01', {
+    language: 'ja',
+    uiColor: '#ffffff',
+  });
+</script> -->
+
+<script type="text/javascript">
+$(function() {
+    // 旅行業に基づく旅行商品の取り扱い
+    $('[name=travel-agency-available]').click(function() {
+        if ($('[name=travel-agency-available]:eq(0)').prop('checked')) {
+            $('.travel-agency-input').fadeIn();
+        } else {
+            $('.travel-agency-input').fadeOut();
+        }
+    });
+
+    // 取扱決済
+    $('[name=payment_type_UseCvs]').click(function() {
+        if ($('[name=payment_type_UseCvs]').prop('checked')) {
+            $('.receipt').fadeIn();
+        } else {
+            $('.receipt').fadeOut();
+        }
+    });
+
+    // $('[name=travel-agency-available]').change(function() {
+    //     if ($(this).is(':checked')) {
+    //         $('.travel-agency-input').fadeIn();
+    //     } else {
+    //         $('.travel-agency-input').fadeOut();
+    //     }
+    // }).trigger('change');
+
+    // 約款
+    $('[name=agreement_type]').change(function() {
+        if ($("input:radio[name='agreement_type']:checked").val() == "default") {
+            $('.agreement-default').show();
+            $('.agreement-pdf').hide();
+            $('.agreement-url').hide();
+        } else if ($("input:radio[name='agreement_type']:checked").val() == "pdf") {
+            $('.agreement-pdf').show();
+            $('.agreement-default').hide();
+            $('.agreement-url').hide();
+        } else if ($("input:radio[name='agreement_type']:checked").val() == "url") {
+            $('.agreement-url').show();
+            $('.agreement-default').hide();
+            $('.agreement-pdf').hide();
+        }
+    }).trigger('change');
+
+    // 旅行条件書
+    $('[name=condition_type]').change(function() {
+        if ($("input:radio[name='condition_type']:checked").val() == "pdf") {
+            $('.condition-pdf').show();
+            $('.condition-url').hide();
+        } else if ($("input:radio[name='condition_type']:checked").val() == "url") {
+            $('.condition-url').show();
+            $('.condition-pdf').hide();
+        }
+    }).trigger('change');
+
+    // プライバシーポリシー
+    $('[name=policy_type]').change(function() {
+        if ($("input:radio[name='policy_type']:checked").val() == "pdf") {
+            $('.policy-pdf').show();
+            $('.policy-url').hide();
+        } else if ($("input:radio[name='policy_type']:checked").val() == "url") {
+            $('.policy-url').show();
+            $('.policy-pdf').hide();
+        }
+    }).trigger('change');
+
+    // 旅行業務取扱料金表
+    $('[name=charges_type]').change(function() {
+        if ($("input:radio[name='charges_type']:checked").val() == "pdf") {
+            $('.charges-pdf').show();
+            $('.charges-url').hide();
+        } else if ($("input:radio[name='charges_type']:checked").val() == "url") {
+            $('.charges-url').show();
+            $('.charges-pdf').hide();
+        }
+    }).trigger('change');
+});
+</script>
+
+<!-- @import '/source/kit/end' -->
+</body>
+</html>

@@ -1,0 +1,220 @@
+<section class="section-style details">
+    <div data-lg>
+        <h3 class="section-ttl">プラン詳細</h3>
+
+        <div class="sub-section plan-detail">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>所要時間</th>
+                        <td>
+                            約3時間50分
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>対象年齢</th>
+                        <td>
+                            小学生以上
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>設定期間</th>
+                        <td>
+                            2016年10月1日～11月27日の毎日
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>除外日</th>
+                        <td>
+                            なし
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ご旅行・プラン代金に含まれるもの</th>
+                        <td>
+                            タクシー乗車代
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>最少最高人数</th>
+                        <td>
+                            2名
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>最少受付人数</th>
+                        <td>
+                            2名
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>最大受付人数</th>
+                        <td>
+                            9名
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>運行会社</th>
+                        <td>
+                            株式会社南木曽観光タクシー
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>予約締切</th>
+                        <td>
+                            ご旅行出発日から起算して5日前まで
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="sub-section caution">
+            <h4 class="sub-section-ttl">注意事項</h4>
+            <ul>
+                <li>
+                    天候が悪い場合や川の増水等の理由でコース変更がある旨ご了承の上、ご参加ください。
+                </li>
+            </ul>
+        </section>
+
+        <section class="sub-section location">
+            <h4 class="sub-section-ttl">集合場所</h4>
+            <div id="contenido">
+                <div id="lado"><div id="side_bar"></div></div>
+                <div id="cuerpo"><div id="map_canvas"></div></div>
+            </div><!-- contenido -->
+            <script type="text/javascript">
+                var side_bar_html = '';
+                var gmarkers = [];
+                var i = 0;
+                var map = null;
+                var infowindow;
+                function inicializar() {
+                var styles = [{
+                    stylers: [
+                        {"hue": "#00a5b3"},
+                        {"saturation": -100}
+                    ],
+                }];
+                google.maps.visualRefresh = true;
+                infowindow = new google.maps.InfoWindow();
+                var myOptions = {
+                    zoom: 18,
+                    //追加
+                    center: new google.maps.LatLng(35.599045, 137.608517),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    scrollwheel: false,
+                    draggable: false,
+                    styles: styles
+                };
+                map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+                google.maps.event.addListener(map, 'click', function() {infowindow.close();});
+                    var point = new google.maps.LatLng(35.599045, 137.608517);
+                    var marker = crearMarcador(point, 'JR南木曽駅　10：20集合　[表示]', '<strong>JR南木曽駅　10：20集合</strong><br><a href="https://goo.gl/maps/SBbDkahud2k" target="_blank">google mapで見る</a>');
+                }
+                function crearMarcador(latlng, label, html) {
+                    var marker = new google.maps.Marker({position: latlng, map: map, title: label});
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.setContent(html);
+                        infowindow.open(map, marker);
+                        map.panTo(point);
+                    });
+                    gmarkers[i] = marker;
+                    side_bar_html += '<a href="javascript:myclick('+i+')">'+label+'<\/a><br>';
+                    document.getElementById('side_bar').innerHTML = side_bar_html;
+                    i++;
+                    return marker;
+                }
+                function myclick(i) {
+                    google.maps.event.trigger(gmarkers[i], 'click');
+                }
+                function loadScript() {
+                    var script = document.createElement('script');
+                    script.type = 'text/javascript';
+                    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&region=jp&' + 'callback=inicializar';
+                    document.body.appendChild(script);
+                }
+                window.onload = loadScript;
+            </script>
+        </section>
+
+        <section class="sub-section other">
+            <h4 class="sub-section-ttl">その他</h4>
+            <ul>
+                <li>
+                    2～4名（小型・中型タクシー）、5～9名（ジャンボタクシー）が基本になります。
+                </li>
+                <li>
+                    車種はご利用人数により異なります。乗合のためリクエストは受け付けかねます。<br />
+                    （貸切対応を除く）
+                </li>
+                <li>
+                    2名参加の場合は車種に関わらず2名一列でのご利用を確保いたします。<br />
+                    （他グループの参加者と隣合うことはございません。）
+                </li>
+                <li>
+                    大人1名 子供1名でお申込みの場合は、大人2名での価格として取り扱いさせていただきます。
+                </li>
+            </ul>
+        </section>
+
+        <section class="sub-section cancel">
+            <h4 class="sub-section-ttl">取消料</h4>
+            <p class="cancel-txt">
+                契約成立後、お客様のご都合で契約を解除する場合、旅行代金に対してお客様1名につき下記の料率で取消料をいただきます。なお、複数人数のご参加で、一部のお客様が契約を解除される場合は、ご参加のお客様から運送・宿泊機関等の（1台・1室あたりの）ご利用人数の変更に対する差額代金をそれぞれいただきます。
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>3日前～2日前</th>
+                        <th>前日</th>
+                        <th>当日</th>
+                        <th>旅行開始後無連絡不参加</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>30%</td>
+                        <td>40%</td>
+                        <td>50%</td>
+                        <td>100%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>
+                    オプショナルプランも上記取消料率による取消料が利用日を基準として別途適用されます。ただし、旅行開始後の取消料は100％となります。
+                </li>
+                <li>
+                    取消しまたは人員減による払い戻しを行う場合は、所定の取消料率を差し引いて返金させていただきますが、返金にかかる振込手数料はお客様負担とさせていただきます。<br />
+                    同様に乗車券等の商品を購入されて払戻しをされる場合、取消料なしの表記のあるものは取消料がかかりませんが返金にかかる振込手数料はお客様負担とさせていただきます。
+                </li>
+            </ul>
+        </section>
+
+        <section class="agency planner">
+            <h4 class="agency-ttl">企画実施会社</h4>
+            <p class="agency-txt">
+                株式会社観光販売システムズ　TEL 050-3775-4727<br>
+                〒450-0002　名古屋市中村区名駅3丁目21番7号<br>
+                旅行業登録：観光庁長官登録旅行業第1600号　総合旅行業務取扱管理者：小川達哉
+            </p>
+            <ul class="cf">
+                <li><a href="https://www.kanko-pro.co.jp/agreement/agreement4.php" target="_blank"><span class="arrow box"></span>約款 <span class="icon-new-tab"></a></li>
+                <li><a href="https://www.kanko-pro.co.jp/agreement/agreement23.php" target="_blank"><span class="arrow box"></span>旅行条件書 <span class="icon-new-tab"></a></li>
+                <li><a href="https://www.kanko-pro.co.jp/privacy/" target="_blank"><span class="arrow box"></span>個人情報保護方針 <span class="icon-new-tab"></a></li>
+            </ul>
+        </section>
+
+        <section class="agency condition">
+            <h4 class="agency-ttl">旅行条件書</h4>
+            <p class="agency-txt">お申込み前に必ず <a href="https://www.kanko-pro.co.jp/agreement/agreement23.php" target="_blank">旅行条件書</a> をお読みください。</p>
+            <ul>
+                <li>旅行条件書を保存するには（画面上部）ブラウザメニューの「ファイル」を選択、次に「名前をつけて保存」を選択します。</li>
+                <li>保存する場所、ファイル名を指定し、ファイルの種類を「WEBページ、HTMLのみ」もしくは「テキストファイル」にして「保存」を選択します。</li>
+            </ul>
+        </section>
+
+    </div>
+</section>

@@ -1,0 +1,164 @@
+<section class="release message is-info">
+    <h2 class="subtitle message-header">
+        公開設定
+    </h2>
+    <div class="conts-body message-body">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>
+                        <span class="icon is-small"><i class="fa fa-refresh"></i></span>
+                        <span>ステータス</span>
+                    </th>
+                    <td>
+                        下書き
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="icon is-small"><i class="fa fa-calendar"></i></span>
+                        <span>公開日時</span>
+                    </th>
+                    <td>
+                        <!-- 2016年5月11日 11:30
+                        <a class="button is-small is-primary is-inverted">
+                          <span class="icon is-small">
+                            <i class="fa fa-edit"></i>
+                          </span>
+                          <span>編集</span>
+                        </a> -->
+                        <p class="control has-addons">
+                            <input class="input js-datepicker" type="text" placeholder="公開日">
+                            <input class="input js-timepicker" type="text" placeholder="時間">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="icon is-small"><i class="fa fa-link"></i></span>
+                        <span>下書きURL</span>
+                    </th>
+                    <td>
+                        <a href="https://example.com?preview=true" target="_blank">
+                            https://example.com?preview=true
+                            <span class="icon is-small"><i class="fa fa-fw fa-external-link"></i></span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="icon is-small"><i class="fa fa-link"></i></span>
+                        <span>公開URL</span>
+                    </th>
+                    <td>
+                        <a href="https://example.com" target="_blank">
+                            https://example.com
+                            <span class="icon is-small"><i class="fa fa-fw fa-external-link"></i></span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="icon is-small"><i class="fa fa-lock"></i></span>
+                        <span>限定公開機能</span>
+                    </th>
+                    <td>
+                        <p class="control">
+                            <label class="radio">
+                                <input type="radio" name="limited-link" value="0" checked> 利用しない
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="limited-link" value="1"> 利用する
+                            </label>
+                        </p>
+                        <div class="limited-link-url">
+                            <label class="label">
+                                <span class="icon is-small"><i class="fa fa-link"></i></span>
+                                <span>限定公開URL</span>
+                            </label>
+                            <div class="control">
+                                <a href="https://example.com" target="_blank">
+                                    https://example.com
+                                    <span class="icon is-small"><i class="fa fa-fw fa-external-link"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="icon is-small"><i class="fa fa-language"></i></span>
+                        <span>多言語機能</span>
+                    </th>
+                    <td>
+                        <p class="control">
+                            <label class="radio">
+                                <input type="radio" name="multilanguage" value="0" checked> 利用しない
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="multilanguage" value="1"> 利用する
+                            </label>
+                        </p>
+                        <div class="multilanguage-on">
+                            <label class="label">
+                                <span class="icon is-small"><i class="fa fa-object-group"></i></span>
+                                <span>記事グループ</span>
+                            </label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="例：masuzushi-taiken">
+                            </div>
+                            <label class="label">
+                                <span class="icon is-small"><i class="fa fa-language"></i></span>
+                                <span>表示言語</span>
+                            </label>
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="language-select" value="ja" checked> 日本語
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="language-select" value="en"> 英語
+                                </label>
+                                <!-- <label class="radio">
+                                    <input type="radio" name="language-select" value="tw"> 台湾語
+                                </label> -->
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="control">
+            <a class="button is-danger is-outlined">
+                <span>このプランを削除</span>
+                <span class="icon is-small">
+                    <i class="fa fa-times"></i>
+                </span>
+            </a>
+            <a class="button is-danger is-pulled-right">
+                <span class="icon is-small">
+                    <i class="fa fa-check"></i>
+                </span>
+                <span>非公開</span>
+            </a>
+            <a class="button is-info is-pulled-right">
+                <span class="icon is-small">
+                    <i class="fa fa-check"></i>
+                </span>
+                <span>公開</span>
+            </a>
+            <a class="button is-success is-pulled-right">
+                <span class="icon is-small">
+                    <i class="fa fa-check"></i>
+                </span>
+                <span>公開リクエスト</span>
+            </a>
+            <a class="button is-primary is-pulled-right">
+                <span class="icon is-small">
+                    <i class="fa fa-check"></i>
+                </span>
+                <span>下書き保存</span>
+            </a>
+        </div>
+    </div>
+
+</section>

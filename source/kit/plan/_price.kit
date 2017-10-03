@@ -1,0 +1,170 @@
+<section class="input-area price">
+
+    <div class="conts-body">
+
+        <div class="control price-wrap">
+            <label class="label">
+                <span class="help">コース毎に代金を設定してください。</span>
+            </label>
+        </div>
+
+        <div class="control">
+            <p class="control has-icon has-icon-right">
+                <span class="select is-fullwidth">
+                  <select>
+                    <option>午前コース</option>
+                    <option>午後コース</option>
+                    <option>終日コース</option>
+                  </select>
+                </span>
+            </p>
+        </div>
+
+        <label class="label">代金タイトル<span class="must">必須</span></label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">16</span>文字</strong></div>
+            <input class="input is-danger limited" type="text" placeholder="例：おひとりさま" maxlength="16">
+        </div>
+
+        <div class="notification">
+            <button class="delete" onclick="((this).parentNode.remove())"></button>
+            <div class="columns">
+                <div class="column">
+                    <label class="label">区分<span class="must">必須</span></label>
+                    <p class="control has-icon has-icon-right">
+                        <span class="select is-fullwidth">
+                          <select>
+                            <option>おとな・こども同額</option>
+                            <option>おとな</option>
+                            <option>こども</option>
+                            <option>大学生</option>
+                            <option>高校生</option>
+                            <option>中学生</option>
+                            <option>小学生</option>
+                            <option>幼児</option>
+                            <option>その他</option>
+                          </select>
+                        </span>
+                    </p>
+                </div>
+                <div class="column">
+                    <label class="label">代金<span class="must">必須</span></label>
+                    <p class="control has-icon has-icon-right">
+                        <input class="input is-danger" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <label class="label">条件
+                    <span class="help">最大5件まで追加可能</span>
+                </label>
+                <div class="control sortable">
+                    <div class="control has-addons">
+                        <a class="button">
+                          <i class="fa fa-navicon"></i>
+                        </a>
+                        <input class="input is-expanded" type="text" placeholder="例：6歳以上">
+                        <a class="button remove" onclick="((this).parentNode.remove())">
+                          <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                    <div class="control has-addons">
+                        <a class="button">
+                          <i class="fa fa-navicon"></i>
+                        </a>
+                        <input class="input is-expanded" type="text" placeholder="例：6歳以上">
+                        <a class="button remove" onclick="((this).parentNode.remove())">
+                          <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="control add-btn">
+                  <a class="button is-primary">
+                    <span class="icon">
+                      <i class="fa fa-plus-circle"></i>
+                    </span>
+                    <span>条件を追加</span>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="notification">
+            <button class="delete" onclick="((this).parentNode.remove())"></button>
+            <div class="columns">
+                <div class="column">
+                    <label class="label">区分<span class="must">必須</span></label>
+                    <p class="control has-icon has-icon-right">
+                        <span class="select is-fullwidth">
+                          <select>
+                            <option>おとな・こども同額</option>
+                            <option>おとな</option>
+                            <option>こども</option>
+                            <option>大学生</option>
+                            <option>高校生</option>
+                            <option>中学生</option>
+                            <option>小学生</option>
+                            <option>幼児</option>
+                            <option>その他</option>
+                          </select>
+                        </span>
+                    </p>
+                </div>
+                <div class="column">
+                    <label class="label">代金<span class="must">必須</span></label>
+                    <p class="control has-icon has-icon-right">
+                        <input class="input is-danger" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <label class="label">条件
+                    <span class="help">最大5件まで追加可能</span>
+                </label>
+                <div class="control sortable">
+                    <div class="control has-addons">
+                        <a class="button">
+                          <i class="fa fa-navicon"></i>
+                        </a>
+                        <input class="input is-expanded" type="text" placeholder="例：6歳以上">
+                        <a class="button remove" onclick="((this).parentNode.remove())">
+                          <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                    <div class="control has-addons">
+                        <a class="button">
+                          <i class="fa fa-navicon"></i>
+                        </a>
+                        <input class="input is-expanded" type="text" placeholder="例：6歳以上">
+                        <a class="button remove" onclick="((this).parentNode.remove())">
+                          <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="control add-btn">
+                  <a class="button is-primary">
+                    <span class="icon">
+                      <i class="fa fa-plus-circle"></i>
+                    </span>
+                    <span>条件を追加</span>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="control add-btn">
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus-circle"></i>
+            </span>
+            <span>代金を追加</span>
+          </a>
+        </div>
+    </div>
+</section>

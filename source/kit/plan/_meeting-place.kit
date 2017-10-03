@@ -1,0 +1,105 @@
+<section class="input-area message meeting-place">
+    <h2 class="conts-ttl subtitle message-header">
+        集合場所
+        <span class="icon">
+          <i class="fa fa-plus-circle"></i>
+        </span>
+    </h2>
+    <div class="conts-body message-body">
+
+        <div class="control sortable numbering">
+            <div class="control numbered">
+                <div class="control box notification">
+                    <button class="delete" onclick="((this).parentNode.parentNode.remove())"></button>
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p class="subtitle is-5">
+                                <a class="button">
+                                  <i class="fa fa-navicon"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                    </nav>
+                    <label class="label">集合場所<span class="must">必須</span></label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                        <input class="input is-danger limited" type="text" placeholder="例：JR富山駅 新幹線改札前　9:20集合" maxlength="64">
+                    </div>
+
+                    <label class="label">住所</label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                        <input class="input limited" type="text" placeholder="例：富山県富山市明輪町1-225" maxlength="64">
+                    </div>
+
+                    <label class="label">座標</label>
+                    <span class="help">地図のピンを動かして位置を調整してください。</span>
+                    <div id="location-map"></div>
+                    <div class="control">
+                        <input class="input" type="text" value="36.141114,137.251362">
+                    </div>
+                </div>
+            </div>
+
+            <div class="control sortable numbered">
+                <div class="control box notification">
+                    <button class="delete" onclick="((this).parentNode.parentNode.remove())"></button>
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p class="subtitle is-5">
+                                <a class="button">
+                                  <i class="fa fa-navicon"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                    </nav>
+                    <label class="label">集合場所<span class="must">必須</span></label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                        <input class="input is-danger limited" type="text" placeholder="例：JR富山駅 新幹線改札前　9:20集合" maxlength="64">
+                    </div>
+
+                    <label class="label">住所</label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                        <input class="input limited" type="text" placeholder="例：富山県富山市明輪町1-225" maxlength="64">
+                    </div>
+
+                    <label class="label">座標</label>
+                    <span class="help">地図のピンを動かして位置を調整してください。</span>
+                    <div id="location-map"></div>
+                    <div class="control">
+                        <input class="input" type="text" value="36.141114,137.251362">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control add-btn">
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus-circle"></i>
+            </span>
+            <span>集合場所を追加</span>
+          </a>
+          <span class="help">最大3件まで追加可能</span>
+        </div>
+
+        <div class="control save-point">
+            <p class="has-text-centered">
+                <a class="button is-success">
+                    <span class="icon">
+                        <i class="fa fa-save"></i>
+                    </span>
+                    <span>変更を保存</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</section>

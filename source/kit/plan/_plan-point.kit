@@ -1,0 +1,136 @@
+<section class="input-area message plan-point">
+    <h2 class="conts-ttl subtitle message-header">
+        プラン内容
+        <span class="icon">
+          <i class="fa fa-plus-circle"></i>
+        </span>
+    </h2>
+    <div class="conts-body message-body">
+        <div class="control sortable numbering">
+
+            <div class="control numbered">
+                <div class="control box notification">
+                    <button class="delete" onclick="((this).parentNode.parentNode.remove())"></button>
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p class="subtitle is-5">
+                                <a class="button">
+                                  <i class="fa fa-navicon"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                    </nav>
+                    <label class="label">画像</label>
+                    <span class="help">横幅800px以上の画像を1枚登録してください。横長画像を推奨。</span>
+                    <div class="control">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <label class="button" for="main_img">画像を選択してください</label>
+                            <input type="file" name="main_img" id="main_img" style="display:none;">
+                        </form>
+                    </div>
+                    <div class="notification main-image">
+                        <button class="delete" onclick="((this).parentNode.remove())"></button>
+                        <figure class="image">
+                            <img src="http://placehold.jp/800x600.png">
+                        </figure>
+                    </div>
+
+                    <label class="label">タイトル<span class="must">必須</span></label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                        <input class="input is-danger limited" type="text" placeholder="例：米騒動発祥の地" maxlength="64">
+                    </div>
+
+                    <label class="label">説明文</label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">128</span>文字</strong></div>
+                        <textarea class="textarea limited" placeholder="例：蜃気楼の見える道、”しんきろうロード”は、魚津市の海沿い海岸線を南北に走る道路の通称です。" maxlength="128"></textarea>
+                    </div>
+
+                    <label class="label">外部リンク<br />
+                        <span class="help">外部リンクを掲載する場合のみ入力してください。</span>
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="例：http://example.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="control numbered">
+                <div class="control box notification">
+                    <button class="delete" onclick="((this).parentNode.parentNode.remove())"></button>
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p class="subtitle is-5">
+                                <a class="button">
+                                  <i class="fa fa-navicon"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                    </nav>
+                    <label class="label">画像</label>
+                    <span class="help">横幅800px以上の画像を1枚登録してください。横長画像を推奨。</span>
+                    <div class="control">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <label class="button" for="main_img">画像を選択してください</label>
+                            <input type="file" name="main_img" id="main_img" style="display:none;">
+                        </form>
+                    </div>
+                    <div class="notification main-image">
+                        <button class="delete" onclick="((this).parentNode.remove())"></button>
+                        <figure class="image">
+                            <img src="http://placehold.jp/800x600.png">
+                        </figure>
+                    </div>
+
+                    <label class="label">タイトル<span class="must">必須</span></label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                        <input class="input is-danger limited" type="text" placeholder="例：米騒動発祥の地" maxlength="64">
+                    </div>
+
+                    <label class="label">説明文</label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">128</span>文字</strong></div>
+                        <textarea class="textarea limited" placeholder="例：蜃気楼の見える道、”しんきろうロード”は、魚津市の海沿い海岸線を南北に走る道路の通称です。" maxlength="128"></textarea>
+                    </div>
+
+                    <label class="label">外部リンク<br />
+                        <span class="help">外部リンクを掲載する場合のみ入力してください。</span>
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="例：http://example.com">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="control add-btn">
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus-circle"></i>
+            </span>
+            <span>内容を追加</span>
+          </a>
+          <span class="help">最大10件まで追加可能</span>
+        </div>
+
+        <div class="control save-point">
+            <p class="control has-addons has-addons-centered">
+                <a class="button is-success">
+                    <span class="icon">
+                        <i class="fa fa-save"></i>
+                    </span>
+                    <span>変更を保存</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</section>

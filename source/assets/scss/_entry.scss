@@ -1,0 +1,182 @@
+// common
+@import "_style";
+
+/* =====================
+  entry style
+===================== */
+.entry {
+    text-align: center;
+    background: white;
+    .mod_form_importance_btn {
+        .check {
+            p {
+                position: relative;
+                display: inline-block;
+                margin: 0 15px;
+                padding: 0;
+                @include font(20);
+                font-weight: 600;
+            }
+            input[type="checkbox"] {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+            }
+            input[type="checkbox"] + label {
+                font-family: 'FontAwesome' !important;
+                &:before {
+                    margin-right: .25em;
+                    font-size: 150%;
+                    vertical-align: top;
+                    content: "\f111";
+                    color: $color_text_light;
+                }
+            }
+            input[type="checkbox"]:checked + label {
+                &:before {
+                    content: "\f058";
+                    color: $color_base;
+                    background: white;
+                }
+            }
+        }
+        .note {
+            @include font(14);
+        }
+    }
+    .confirmation {
+        .mod_form_btn {
+                margin: auto;
+                max-width: 600px;
+                position: relative;
+            .entry-btn {
+                padding: 20px 10px;
+                display: block;
+                width: 100%;
+                color: white;
+                @include font(18);
+                letter-spacing: .125em;
+                text-align: center;
+                text-decoration: none;
+                border: 1px solid transparent;
+                background: $color_base;
+                position: relative;
+                transition: all .3s ease;
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    content: "";
+                    vertical-align: middle;
+                    right: 30px;
+                    width: 12px;
+                    height: 12px;
+                    border-top: 1px solid white;
+                    border-right: 1px solid white;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    transition: all .3s ease;
+                }
+                &:hover {
+                    cursor: pointer;
+                    &:after {
+                        right: 20px;
+                    }
+                }
+            }
+            &.filter {
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    content: "";
+                    background: rgba(255,255,255,.5);
+                }
+            }
+        }
+        .confirmation_paper {
+            @include font(14);
+            .document {
+                a {
+                    color: $color_text;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    background: white;
+    .agency-info {
+        .agency-link {
+            margin: auto;
+            max-width: 400px;
+            a {
+                padding: 20px 10px;
+                display: block;
+                width: calc(100% - 20px);
+                color: white;
+                @include font(18);
+                letter-spacing: .125em;
+                text-align: center;
+                text-decoration: none;
+                border: 1px solid transparent;
+                background: $color_base;
+                position: relative;
+                transition: all .3s ease;
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    content: "";
+                    vertical-align: middle;
+                    right: 30px;
+                    width: 12px;
+                    height: 12px;
+                    border-top: 1px solid white;
+                    border-right: 1px solid white;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    transition: all .3s ease;
+                }
+                &:hover {
+                    &:after {
+                        right: 20px;
+                    }
+                }
+            }
+        }
+        .agency-phone {
+            text-align: center;
+            p {
+                @include font(20);
+                .phone-number {
+                    color: $color_text;
+                    @include font(28);
+                    font-family: 'Lato', sans-serif;
+                    @include hover;
+                }
+            }
+        }
+    }
+}
+
+.entry-prepare {
+    background: white;
+    text-align: center;
+    .prepare-txt {
+        padding: 5px 40px;
+        display: inline-block;
+        @include font(18);
+        font-weight: 600;
+        letter-spacing: .125em;
+        border: 3px solid $color_text_light;
+    }
+}

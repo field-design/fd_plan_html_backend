@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- @import '/source/kit/head' -->
+<body id="top">
+<!-- @import '/source/kit/gtm' -->
+
+<!-- @import '/source/kit/global-header' -->
+
+<!-- @import '/source/kit/global-nav' -->
+
+<div class="container section">
+
+    <div class="breadcrumbs mb-30">
+        <div class="notification">
+            <ul class="is-clearfix">
+              <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+              <li><span>トップページ（English）</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="columns">
+        <div class="column is-3 is-hidden-mobile">
+<!-- @import '/source/kit/side' -->
+        </div>
+        <div class="column is-9">
+<!-- START main -->
+<main>
+
+    <h2 class="title is-3">トップページ（English）</h2>
+
+    <section class="section">
+        <div class="control">
+            <h3 class="subtitle">SEO関連設定</h3>
+        </div>
+
+        <label class="label">H1タグ</label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+            <input class="input limited" type="text" placeholder="例：富山県を楽しむツアーをいますぐ購入" maxlength="64">
+        </div>
+
+        <label class="label">titleタグ</label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+            <input class="input limited" type="text" placeholder="例：いまからえらべるTRAVEL" maxlength="64">
+        </div>
+
+        <label class="label">descriptionタグ</label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">128</span>文字</strong></div>
+            <textarea class="textarea limited" placeholder="例：越中にいかわ観光圏は、富山県の魚津市・黒部市・入善町・朝日町が参加する、水との関わりが深いエリア。VISIT富山県のエリア特集「越中にいかわ観光圏」では、水をテーマにした、各市町村の現地観光プランをご紹介します！" maxlength="128"></textarea>
+        </div>
+
+        <label class="label">keywordタグ</label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+            <input class="input limited" type="text" placeholder="例：TRAVEL,富山,観光,にいかわ,体験" maxlength="64">
+        </div>
+    </section>
+
+    <div class="control save-point">
+        <p class="has-text-centered">
+            <a class="button is-success">
+                <span class="icon">
+                    <i class="fa fa-save"></i>
+                </span>
+                <span>変更を保存</span>
+            </a>
+        </p>
+    </div>
+
+</main>
+<!-- END main -->
+        </div>
+    </div>
+</div>
+
+<!-- @import '/source/kit/global-footer' -->
+
+<!-- @import '/source/kit/fonts' -->
+
+
+
+<!-- @import '/source/kit/commonscript' -->
+
+<!-- @import '/source/kit/gmap' -->
+
+<!-- Page Script -->
+
+<link rel="stylesheet" type="text/css" href="/assets/css/multi.min.css">
+<script src="/assets/js/multi.min.js"></script>
+
+<script>
+/***************************
+custom select
+****************************/
+var select_element = document.getElementById( 'custom-select' );
+multi( select_element, {
+    'enable_search': true,
+    'search_placeholder': '検索...',
+});
+$( '#custom-select' ).multi();
+
+
+/***************************
+並び替え
+****************************/
+$( function() {
+    $( ".sortable" ).sortable();
+    $( ".sortable" ).disableSelection();
+} );
+
+$( function() {
+    $( ".selected-wrapper" ).sortable();
+    $( ".selected-wrapper" ).disableSelection();
+} );
+</script>
+
+
+<!-- @import '/source/kit/end' -->
+</body>
+</html>

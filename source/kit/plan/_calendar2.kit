@@ -1,0 +1,41 @@
+<section class="input-area calendar">
+
+    <div class="conts-body">
+
+        <div class="calendar-wrap">
+            <label class="label">
+                催行日<span class="must">必須</span>
+                <span class="help">各日程に在庫設定又は、リクエスト受付可能日を入力してください。<br />コースを設定している場合はコース毎に設定してください。<br />必要に応じてオプションを選択してください。</span>
+            </label>
+            <!-- @import '/source/kit/calendar2' -->
+        </div>
+
+        <hr>
+
+        <div class="control">
+            <label class="label">
+                手仕舞い日（申込締切日）<span class="must">必須</span>
+                <span class="help">当日の場合は0日前と入力してください。</span>
+            </label>
+            <div class="">
+                <p class="control has-addons">
+                  <input class="input is-danger" type="number" min="0" placeholder="例：3">
+                  <span class="button is-disabled">日前</span>
+                  <input class="input js-timepicker" type="text" placeholder="時間">
+                  <span class="button is-disabled">時まで</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="control save-point">
+            <p class="has-text-centered">
+                <a class="button is-success">
+                    <span class="icon">
+                        <i class="fa fa-save"></i>
+                    </span>
+                    <span>変更を保存</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</section>

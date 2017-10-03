@@ -1,0 +1,11 @@
+<script>
+// 送信ボタン表示制御
+$(".mod_form_btn").addClass("filter");
+$(".mod_form_importance_btn label,.mod_form_importance_btn input").click(function(){
+    if($(".mod_form_importance_btn input:checkbox").is(':checked')){
+        $(".mod_form_btn").removeClass("filter");
+    }else{
+        $(".mod_form_btn").addClass("filter");
+    }
+})
+</script>

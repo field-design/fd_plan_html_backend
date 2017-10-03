@@ -1,0 +1,167 @@
+<section class="input-area message plan-detail">
+    <h2 class="conts-ttl subtitle message-header">
+        プラン詳細
+        <span class="icon">
+          <i class="fa fa-minus-circle"></i>
+        </span>
+    </h2>
+    <div class="conts-body message-body">
+        <div class="columns control">
+            <div class="column is-4">
+                <label class="label">開始日<span class="must">必須</span></label>
+                <p class="control has-icon has-icon-right">
+                    <input class="input is-danger js-datepicker" type="text" placeholder="開始日">
+                    <span class="icon is-small">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="column is-4">
+                <label class="label">終了日<span class="must">必須</span></label>
+                <p class="control has-icon has-icon-right">
+                    <input class="input is-danger js-datepicker" type="text" placeholder="終了日">
+                    <span class="icon is-small">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="control">
+            <span class="must">必須</span>
+            <div class="control">
+                <div class="help counter">残り<span class="count">128</span>文字</strong></div>
+                <textarea class="textarea limited" placeholder="例：上記期間の火曜、木曜" maxlength="128"></textarea>
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">除外日</label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">128</span>文字</strong></div>
+                <textarea class="textarea limited" placeholder="例：2016年12月28日～2017年1月5日" maxlength="128"></textarea>
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">ご旅行・プラン代金に含まれるもの
+                <span class="help">最大10件まで追加可能</span>
+            </label>
+            <div class="control sortable">
+                <div class="control has-addons">
+                    <a class="button">
+                      <i class="fa fa-navicon"></i>
+                    </a>
+                    <input class="input is-expanded" type="text" placeholder="例：タクシー乗車代">
+                    <a class="button remove" onclick="((this).parentNode.remove())">
+                      <i class="fa fa-close"></i>
+                    </a>
+                </div>
+                <div class="control has-addons">
+                    <a class="button">
+                      <i class="fa fa-navicon"></i>
+                    </a>
+                    <input class="input is-expanded" type="text" placeholder="例：タクシー乗車代">
+                    <a class="button remove" onclick="((this).parentNode.remove())">
+                      <i class="fa fa-close"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="control add-btn">
+              <a class="button is-primary">
+                <span class="icon">
+                  <i class="fa fa-plus-circle"></i>
+                </span>
+                <span>行を追加</span>
+              </a>
+            </div>
+        </div>
+
+        <div class="columns control">
+            <div class="column">
+                <label class="label">最少受付人員<span class="must">必須</span></label>
+                <p class="control has-icon has-icon-right">
+                    <input class="input is-danger" type="number" min="1" placeholder="例：2">
+                    <span class="icon is-small">
+                      名
+                    </span>
+                </p>
+            </div>
+            <div class="column">
+                <label class="label">最少催行人員<span class="must">必須</span></label>
+                <p class="control has-icon has-icon-right">
+                    <input class="input is-danger" type="number" min="1" placeholder="例：2">
+                    <span class="icon is-small">
+                      名
+                    </span>
+                </p>
+            </div>
+            <div class="column">
+                <label class="label">最大申込人員<span class="must">必須</span></label>
+                <p class="control has-icon has-icon-right">
+                    <input class="input is-danger" type="number" min="1" placeholder="例：9">
+                    <span class="icon is-small">
+                      名
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">運行会社</label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                <input class="input limited" type="text" placeholder="例：〇〇交通" maxlength="64">
+            </div>
+        </div>
+
+        <div class="control">
+            <div class="control">
+                <label class="label">添乗員</label>
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="plan_type" value="standard" checked="checked"> 有り
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="plan_type" value="request"> 無し
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">スタート時間</label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                <input class="input limited" type="text" placeholder="例：10：00スタート" maxlength="64">
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">所要時間</label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                <input class="input limited" type="text" placeholder="例：約3時間" maxlength="64">
+            </div>
+        </div>
+
+        <div class="control">
+            <label class="label">予約締切<span class="must">必須</span></label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                <input class="input is-danger limited" type="text" placeholder="例：ご旅行出発日前日の０時間前" maxlength="64">
+            </div>
+        </div>
+
+        <div class="control save-point">
+            <p class="has-text-centered">
+                <a class="button is-success">
+                    <span class="icon">
+                        <i class="fa fa-save"></i>
+                    </span>
+                    <span>変更を保存</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</section>

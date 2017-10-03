@@ -1,0 +1,118 @@
+<section class="cancel input-area message">
+    <h2 class="conts-ttl subtitle message-header">
+        取消料
+        <span class="icon">
+          <i class="fa fa-plus-circle"></i>
+        </span>
+    </h2>
+    <div class="conts-body message-body">
+        <span class="control help">未入力の場合は、プロフィールで設定した取消料が表示されます。</span>
+
+        <div class="control">
+            <label class="label">説明文</label>
+            <div class="control">
+                <div class="help counter">残り<span class="count">256</span>文字</strong></div>
+                <textarea class="textarea limited" placeholder="例：契約成立後、お客様のご都合で契約を解除する場合、旅行代金に対してお客様1名につき下記の料率で取消料をいただきます。" maxlength="256"></textarea>
+            </div>
+        </div>
+
+        <label class="label">
+            料率
+            <span class="help">最大10件まで追加可能</span>
+        </label>
+        <div class="sortable">
+            <p class="control has-addons">
+                <a class="button">
+                  <i class="fa fa-navicon"></i>
+                </a>
+              <input class="input" type="text" placeholder="例：2日前">
+              <span class="select">
+                <select>
+                  <option>100%</option>
+                  <option>90%</option>
+                  <option>80%</option>
+                  <option>70%</option>
+                  <option>60%</option>
+                  <option>50%</option>
+                  <option>40%</option>
+                  <option>30%</option>
+                  <option>20%</option>
+                  <option>10%</option>
+                  <option>なし</option>
+                </select>
+              </span>
+              <a class="button" onclick="((this).parentNode.remove())">
+                <i class="fa fa-close"></i>
+              </a>
+            </p>
+            <p class="control has-addons">
+                <a class="button">
+                  <i class="fa fa-navicon"></i>
+                </a>
+              <input class="input" type="text" placeholder="例：2日前">
+              <span class="select">
+                <select>
+                  <option>100%</option>
+                  <option>90%</option>
+                  <option>80%</option>
+                  <option>70%</option>
+                  <option>60%</option>
+                  <option>50%</option>
+                  <option>40%</option>
+                  <option>30%</option>
+                  <option>20%</option>
+                  <option>10%</option>
+                  <option>なし</option>
+                </select>
+              </span>
+              <a class="button" onclick="((this).parentNode.remove())">
+                <i class="fa fa-close"></i>
+              </a>
+            </p>
+        </div>
+        <p class="control add-btn">
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus-circle"></i>
+            </span>
+            <span>料率を追加</span>
+          </a>
+        </p>
+
+        <label class="label">
+            注釈
+            <span class="help">最大10件まで追加可能</span>
+        </label>
+        <div class="control sortable">
+            <p class="control has-addons">
+                <a class="button is-white">
+                  <i class="fa fa-navicon"></i>
+                </a>
+                <textarea class="textarea is-expanded" style="min-height: 60px; min-width: auto;" placeholder="例：オプショナルプランも上記取消料率による取消料が利用日を基準として別途適用されます。ただし、旅行開始後の取消料は100％となります。"></textarea>
+                <a class="button is-white">
+                  <i class="fa fa-close"></i>
+                </a>
+            </p>
+        </div>
+        <p class="control add-btn">
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus-circle"></i>
+            </span>
+            <span>行を追加</span>
+          </a>
+        </p>
+
+        <div class="control save-point">
+            <p class="has-text-centered">
+                <a class="button is-success">
+                    <span class="icon">
+                        <i class="fa fa-save"></i>
+                    </span>
+                    <span>変更を保存</span>
+                </a>
+            </p>
+        </div>
+
+    </div>
+</section>

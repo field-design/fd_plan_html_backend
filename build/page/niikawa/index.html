@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>title</title>
+<meta name="description" content="">
+<!-- icons -->
+<link rel="shortcut icon" href="/assets/img/icon/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/img/icon/apple-touch-icon.png">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/jquery.timepicker.css">
+<!-- Modernizr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<!--- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script src="/assets/js/jquery.timepicker.min.js"></script>
+<!-- DNS prefetch -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+</head>
+
+<body id="top">
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+
+
+<!-- START global-header -->
+<header class="global-header">
+    <nav class="nav has-shadow" id="top">
+      <div class="container">
+        <div class="nav-left">
+          <span class="nav-item">
+            <h1 class="title is-5">サイト名</h1>
+            </span>
+          <a class="nav-item is-tab is-hidden-mobile" href="/" target="_blank">
+              <i class="fa fa-fw fa-external-link"></i>
+              サイトを表示
+          </a>
+          <a class="nav-item is-tab is-hidden-mobile" href="/admin">
+              <i class="fa fa-fw fa-home"></i>
+              HOME
+          </a>
+        </div>
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu">
+          <span class="nav-item">
+              <a class="button is-white" href="/assets/docs/manual.pdf" target="_blank">
+                  <i class="fa fa-fw fa-file-text"></i>
+                  操作マニュアル
+              </a>
+              <a class="button is-light" href="/admins">
+                  <i class="fa fa-fw fa-user"></i>
+                  プロフィール
+              </a>
+              <a class="button" href="/login/">
+                <i class="fa fa-fw fa-sign-out"></i>
+                ログアウト
+              </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+</header>
+<!-- END global-header -->
+
+
+<!-- START global-nav -->
+<div class="global-nav">
+    <div class="container">
+
+    </div>
+</div>
+<!-- END global-nav -->
+
+
+<div class="container">
+
+    <div class="breadcrumbs section">
+        <div class="notification">
+            <ul class="is-clearfix">
+              <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+              <li><span>inにいかわ</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="columns section">
+        <div class="column is-3 is-hidden-mobile">
+<aside class="menu">
+
+<ul class="menu-list">
+  <li>
+    <p class="menu-label">商品編集</p>
+    <ul>
+      <li><a class="is-active" href="/product/post">基本情報</a></li>
+      <li><a href="/product/post">代金</a></li>
+      <li><a href="/product/post">プラン詳細</a></li>
+      <li><a href="/product/post">集合場所</a></li>
+      <li><a href="/product/post">注意事項・その他</a></li>
+      <li><a href="/product/post">取消料</a></li>
+      <li><a href="/product/post">お申し込み</a></li>
+      <li><a href="/product/post">プラン内容</a></li>
+      <li><a href="/product/post">エリア・カテゴリ</a></li>
+      <li><a href="/product/post">質問事項</a></li>
+      <li><a href="/product/post">公開設定</a></li>
+    </ul>
+  </li>
+</ul>
+  <p class="menu-label">
+    一般
+  </p>
+  <ul class="menu-list">
+    <li><a href="/">ダッシュボード</a></li>
+  </ul>
+  <p class="menu-label">
+    商品管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/product">商品一覧</a></li>
+    <li><a href="/product/post">商品追加</a></li>
+    <li><a href="/product/price">代金設定</a></li>
+    <li><a href="/product/calendar">予約カレンダー</a></li>
+  </ul>
+  <p class="menu-label">
+    固定ページ
+  </p>
+  <ul class="menu-list">
+    <li><a href="/page/top">in富山</a></li>
+    <li><a href="/page/top_en">in富山（EN）</a></li>
+    <li><a href="/page/niikawa">inにいかわ</a></li>
+    <li><a href="/page/niikawa_en">inにいかわ（EN）</a></li>
+  </ul>
+  <p class="menu-label">
+    受注管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/order">受注一覧</a></li>
+  </ul>
+  <p class="menu-label">
+    売上管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/sales">売上一覧</a></li>
+  </ul>
+  <p class="menu-label">
+    設定
+  </p>
+  <ul class="menu-list">
+    <li><a href="/admins">事業者一覧</a></li>
+    <!-- <li><a href="/admins/edit">プロフィール</a></li> -->
+  </ul>
+  <p class="menu-label">
+    その他
+  </p>
+  <ul class="menu-list">
+    <li><a href="/promotion/banner">バナー掲載について</a></li>
+  </ul>
+</aside>
+
+        </div>
+        <div class="column is-9">
+<!-- START main -->
+<main>
+
+    <h2 class="title is-3">inにいかわ</h2>
+
+    <section class="section">
+        <div class="control">
+            <h3 class="subtitle">スライドショー</h3>
+            <label class="label">
+                <span class="must">必須</span>
+                <span class="help">横幅1,400px以上の画像を1枚以上登録してください。横長画像を推奨。最大5枚。</span>
+            </label>
+
+            <div class="control sortable">
+                <div class="control box notification">
+                    <button class="delete" onclick="((this).parentNode.remove())"></button>
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p class="subtitle is-5">
+                                <a class="button">
+                                  <i class="fa fa-navicon"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                    </nav>
+                    <div class="control">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <label class="button" for="main_img">画像を選択してください</label>
+                            <input type="file" name="main_img" id="main_img" style="display:none;">
+                        </form>
+                    </div>
+                    <div class="main-image">
+                        <figure class="image">
+                            <img src="http://placehold.jp/1400x700.png">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="control box notification">
+                    <button class="delete" onclick="((this).parentNode.remove())"></button>
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p class="subtitle is-5">
+                                <a class="button">
+                                  <i class="fa fa-navicon"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                    </nav>
+                    <div class="control">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <label class="button" for="main_img">画像を選択してください</label>
+                            <input type="file" name="main_img" id="main_img" style="display:none;">
+                        </form>
+                    </div>
+                    <div class="main-image">
+                        <figure class="image">
+                            <img src="http://placehold.jp/1400x700.png">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="control add-btn">
+              <a class="button is-primary">
+                <span class="icon">
+                  <i class="fa fa-plus-circle"></i>
+                </span>
+                <span>スライドを追加</span>
+              </a>
+              <span class="help">最大5件まで追加可能</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="control">
+            <h3 class="subtitle">表示順設定</h3>
+            <p>
+                一覧表示では1ヶ月間の間で閲覧数（ページビュー）が多い記事が上位に表示されますが、優先的に表示したい商品がある場合は下記のフィールドで設定してください。<span class="help">最大20件まで設定可能</span><br />
+            </p>
+        </div>
+        <select name="" id="custom-select" multiple="multiple">
+            <option value="plan000029">富山入善 ます寿し手作り体験</option>
+            <option value="plan000033">蜃気楼ガイドと行く！ しんきろうロードレンタサイクリング プラン</option>
+            <option value="plan000035">【なないろKAN】吹きガラス体験</option>
+            <option value="plan000030">黒部市・生地のまち歩き　漁師町の限定寿司ランチ付きツアー</option>
+            <option value="plan000042">【いつでも創作体験】紋切遊びで「行灯」づくり</option>
+            <option value="plan000041">【いつでも創作体験】消しゴムはんこで「アンブレラ」づくり</option>
+            <option value="plan000034">【なないろKAN】陶芸体験（絵付け）</option>
+            <option value="plan000043">岩を抱いた巨木「洞杉」を巡る</option>
+            <option value="plan000044">深層水仕込みカキを食べ歩き　にゅうぜんバル街2017</option>
+            <option value="plan000037">【いつでも創作体験】紋切遊び&消しゴムはんこで「タンブラー」づくり</option>
+        </select>​
+    </section>
+
+    <section class="section">
+        <div class="control">
+            <h3 class="subtitle">SEO関連設定</h3>
+        </div>
+
+        <label class="label">H1タグ</label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+            <input class="input limited" type="text" placeholder="例：富山県を楽しむツアーをいますぐ購入" maxlength="64">
+        </div>
+
+        <label class="label">titleタグ</label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+            <input class="input limited" type="text" placeholder="例：いまからえらべるTRAVEL" maxlength="64">
+        </div>
+
+        <label class="label">descriptionタグ</label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">128</span>文字</strong></div>
+            <textarea class="textarea limited" placeholder="例：越中にいかわ観光圏は、富山県の魚津市・黒部市・入善町・朝日町が参加する、水との関わりが深いエリア。VISIT富山県のエリア特集「越中にいかわ観光圏」では、水をテーマにした、各市町村の現地観光プランをご紹介します！" maxlength="128"></textarea>
+        </div>
+
+        <label class="label">keywordタグ</label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+            <input class="input limited" type="text" placeholder="例：TRAVEL,富山,観光,にいかわ,体験" maxlength="64">
+        </div>
+    </section>
+
+    <div class="control save-point">
+        <p class="has-text-centered">
+            <a class="button is-success">
+                <span class="icon">
+                    <i class="fa fa-save"></i>
+                </span>
+                <span>変更を保存</span>
+            </a>
+        </p>
+    </div>
+
+</main>
+<!-- END main -->
+        </div>
+    </div>
+</div>
+
+<div class="section sitemap is-hidden-desktop">
+<aside class="menu">
+
+<ul class="menu-list">
+  <li>
+    <p class="menu-label">商品編集</p>
+    <ul>
+      <li><a class="is-active" href="/product/post">基本情報</a></li>
+      <li><a href="/product/post">代金</a></li>
+      <li><a href="/product/post">プラン詳細</a></li>
+      <li><a href="/product/post">集合場所</a></li>
+      <li><a href="/product/post">注意事項・その他</a></li>
+      <li><a href="/product/post">取消料</a></li>
+      <li><a href="/product/post">お申し込み</a></li>
+      <li><a href="/product/post">プラン内容</a></li>
+      <li><a href="/product/post">エリア・カテゴリ</a></li>
+      <li><a href="/product/post">質問事項</a></li>
+      <li><a href="/product/post">公開設定</a></li>
+    </ul>
+  </li>
+</ul>
+  <p class="menu-label">
+    一般
+  </p>
+  <ul class="menu-list">
+    <li><a href="/">ダッシュボード</a></li>
+  </ul>
+  <p class="menu-label">
+    商品管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/product">商品一覧</a></li>
+    <li><a href="/product/post">商品追加</a></li>
+    <li><a href="/product/price">代金設定</a></li>
+    <li><a href="/product/calendar">予約カレンダー</a></li>
+  </ul>
+  <p class="menu-label">
+    固定ページ
+  </p>
+  <ul class="menu-list">
+    <li><a href="/page/top">in富山</a></li>
+    <li><a href="/page/top_en">in富山（EN）</a></li>
+    <li><a href="/page/niikawa">inにいかわ</a></li>
+    <li><a href="/page/niikawa_en">inにいかわ（EN）</a></li>
+  </ul>
+  <p class="menu-label">
+    受注管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/order">受注一覧</a></li>
+  </ul>
+  <p class="menu-label">
+    売上管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/sales">売上一覧</a></li>
+  </ul>
+  <p class="menu-label">
+    設定
+  </p>
+  <ul class="menu-list">
+    <li><a href="/admins">事業者一覧</a></li>
+    <!-- <li><a href="/admins/edit">プロフィール</a></li> -->
+  </ul>
+  <p class="menu-label">
+    その他
+  </p>
+  <ul class="menu-list">
+    <li><a href="/promotion/banner">バナー掲載について</a></li>
+  </ul>
+</aside>
+
+</div>
+
+<!-- START global-footer -->
+<footer class="global-footer section">
+  <div class="container">
+    <div class="has-text-centered">
+      <p class="copyright">
+          © <script type="text/javascript">myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear);</script> 株式会社フィールドデザイン<br />
+          操作方法についてのお問い合わせ先：026-227-8955
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- END global-footer -->
+
+
+<!-- WEB Fonts -->
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" data-webfonts />
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" data-webfonts />
+
+
+
+
+<!-- Optional Stylesheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<!-- Common Script -->
+<script src="https://bulma.io/javascript/bulma.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script src="/assets/js/common.min.js"></script>
+<script src="/assets/js/custom.min.js"></script>
+
+
+<!-- Google map javascript api v3 -->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDaVeeyDXpwXIBedG9iyhnt3bhoY_WBGpY"></script>
+
+
+<!-- Page Script -->
+
+<link rel="stylesheet" type="text/css" href="/assets/css/multi.min.css">
+<script src="/assets/js/multi.min.js"></script>
+
+<script>
+/***************************
+custom select
+****************************/
+var select_element = document.getElementById( 'custom-select' );
+multi( select_element, {
+    'enable_search': true,
+    'search_placeholder': '検索...',
+});
+$( '#custom-select' ).multi();
+
+
+/***************************
+並び替え
+****************************/
+$( function() {
+    $( ".sortable" ).sortable();
+    $( ".sortable" ).disableSelection();
+} );
+
+$( function() {
+    $( ".selected-wrapper" ).sortable();
+    $( ".selected-wrapper" ).disableSelection();
+} );
+</script>
+
+
+
+
+
+</body>
+</html>

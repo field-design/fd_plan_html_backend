@@ -163,6 +163,9 @@
 .release table td span {
   vertical-align: middle; }
 
+.release .button {
+  margin: 2px; }
+
 /* =====================
   login styles
 ===================== */

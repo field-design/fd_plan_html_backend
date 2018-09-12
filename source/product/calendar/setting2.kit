@@ -64,6 +64,25 @@ $(function() {
     });
 });
 
+/***************************
+予約区分
+****************************/
+$(function() {
+    $('[name="classification"]:radio').change( function() {
+        if($('[id=d1]').prop('checked')){
+            $('.control-d1 input').removeAttr("disabled");
+            $('.control-d2 input').attr("disabled", "disabled");
+            $('.control-d1').css('opacity','1');
+            $('.control-d2').css('opacity','.2');
+        } else if ($('[id=d2]').prop('checked')) {
+            $('.control-d1 input').attr("disabled", "disabled");
+            $('.control-d2 input').removeAttr("disabled");
+            $('.control-d1').css('opacity','.2');
+            $('.control-d2').css('opacity','1');
+        }
+    });
+});
+
 </script>
 
 

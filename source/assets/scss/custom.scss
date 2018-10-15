@@ -348,8 +348,21 @@ body.login {
     }
 }
 
-.control.control-d2 {
-    opacity: .2;
+.control {
+    &.control-d2 {
+        opacity: .2;
+        .has-addons {
+            input {
+                max-width: 110px;
+            }
+            .no-frame {
+                display: inline-flex;
+                align-items: center;
+                padding-left: .75em;
+                padding-right: .75em;
+            }
+        }
+    }
 }
 
 

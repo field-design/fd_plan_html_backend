@@ -260,6 +260,9 @@ body.login footer {
     padding-left: .75em;
     padding-right: .75em; }
 
+.control.deposit-guide {
+  margin-top: 20px; }
+
 /* =====================
   admin styles
 ===================== */

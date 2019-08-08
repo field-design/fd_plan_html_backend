@@ -366,6 +366,14 @@ body.login {
     &.deposit-guide {
         margin-top: 20px;
     }
+    &.column-flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: .75rem;
+        span {
+            position: relative;
+        }
+    }
 }
 
 :placeholder-shown {

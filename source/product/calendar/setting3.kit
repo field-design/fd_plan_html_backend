@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <!-- @import '/source/kit/head' -->
 <body id="top">
 <!-- @import '/source/kit/gtm' -->
@@ -38,7 +39,7 @@
 
     <h2 class="title is-3">予約カレンダー</h2>
 
-<!-- @import '/source/kit/plan/calendar' -->
+<!-- @import '/source/kit/plan/calendar3' -->
 
 <div class="control save-point">
     <p class="has-text-centered">
@@ -88,8 +89,11 @@
 
 <!-- Page Script -->
 
-<script>
+<!-- Remodal -->
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
+
+<script>
 /***************************
 datepicker
 ****************************/
@@ -119,6 +123,32 @@ $(function() {
             $('.control-d2').css('opacity','1');
         }
     });
+});
+
+/***************************
+ 在庫管理表
+****************************/
+$(function(){
+    $('.thead select[name="select-all-set"]').each(function(i){
+        $(this).addClass('number' + (i+1));
+    });
+
+    $('.tbody tr').each(function(i){
+        $(this).children('td').each(function (i) {
+            $(this).addClass('number' + (i+1));
+        });
+    });
+});
+
+$(function() {
+  $('.btn-click').on('click',function(){
+      var classnum = $(this).prev('span').children('select[name="select-all-set"]').attr('class');
+      var val = $(this).prev('span').children('select[name="select-all-set"]').val();
+
+      if($('.tbody tr td').hasClass(classnum)){
+          $('.tbody tr .' + classnum).find('select[name="select-all-receive"]').val(val);
+      }
+  });
 });
 
 </script>

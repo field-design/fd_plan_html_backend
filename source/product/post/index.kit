@@ -8,9 +8,9 @@
 
 <!-- @import '/source/kit/global-nav' -->
 
-<div class="container section">
+<div class="container">
 
-    <div class="breadcrumbs mb-30">
+    <div class="breadcrumbs section">
         <div class="notification">
             <ul class="is-clearfix">
               <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="columns ">
+    <div class="columns section">
         <div class="column is-3 is-hidden-mobile">
 <!-- @import '/source/kit/side' -->
         </div>
@@ -41,54 +41,110 @@
 
     <h2 class="title is-3">商品編集</h2>
 
-<div class="js-accordion">
-
-<!-- @import '/source/kit/plan/plan-outline' -->
-
-<!-- @import '/source/kit/plan/plan-price' -->
-
-<!-- @import '/source/kit/plan/plan-detail' -->
-
-<!-- @import '/source/kit/plan/meeting-place' -->
-
-<!-- @import '/source/kit/plan/cautions' -->
-
-<!-- @import '/source/kit/plan/cancel' -->
-
-<!-- @import '/source/kit/plan/plan-course' -->
-
-<!-- @import '/source/kit/plan/plan-point' -->
-
-<!-- @import '/source/kit/plan/survey' -->
-
-<!-- @import '/source/kit/plan/release' -->
-
-</div>
-
-<div class="status-info section">
-    <progress class="progress is-success is-small" value="30" max="100">30%</progress>
-    <!-- <div class="status has-text-centered">
-        <a class="button is-success is-loading">Loading</a>
-        <a class="button is-success">
-            <span class="icon">
-                <i class="fa fa-check"></i>
+    <div class="products columns product-list">
+      <div class="column is-one-third">
+        <a class="post-list column notification is-info" href="/product/base-info/">
+          <div class="list-inner">
+            <span>
+              <p class="title is-4 has-text-centered">1. 基本情報</p>
+              <ul>
+                <li>・基本情報</li>
+                <li>・プラン詳細</li>
+                <li>・集合場所</li>
+              </ul>
             </span>
-            <span>保存しました</span>
+          </div>
         </a>
-        <a class="button is-success">
-            <span class="icon">
-                <i class="fa fa-check"></i>
+      </div>
+      <div class="column is-one-third">
+        <a class="post-list column notification is-info" href="/product/detail-info/">
+          <div class="list-inner">
+            <span>
+              <p class="title is-4 has-text-centered">2. 詳細情報</p>
+              <ul>
+                <li>・注意事項・その他</li>
+                <li>・取消料</li>
+                <li>・お申し込み</li>
+                <li>・質問事項</li>
+              </ul>
             </span>
-            <span>リクエストを送信しました</span>
+          </div>
         </a>
-        <a class="button is-info">
-            <span class="icon is-small">
-                <i class="fa fa-check"></i>
-            </span>
-            <span>公開しました</span>
+      </div>
+      <div class="column is-one-third">
+        <a class="post-list column notification is-info" href="/product/plan/">
+          <div class="list-inner">
+            <p class="title is-4 has-text-centered">3. プラン内容</p>
+          </div>
+        </a>
+      </div>
+      <div class="column is-one-third">
+        <a class="post-list column notification is-info" href="/product/price/setting.html">
+          <div class="list-inner">
+            <p class="title is-4 has-text-centered">4. 代金</p>
+          </div>
+        </a>
+      </div>
+      <div class="column is-one-third">
+        <a class="post-list column notification is-info" href="/product/calendar/setting.html">
+          <div class="list-inner">
+            <p class="title is-4 has-text-centered">5. カレンダー</p>
+          </div>
+        </a>
+      </div>
+      <div class="column is-one-third">
+        <a class="post-list column notification is-info" href="/product/release/">
+          <div class="list-inner">
+            <p class="title is-4 has-text-centered">6. 公開設定</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- <div class="products columns is-multiline">
+        <a class="column is-one-third post-list" href="/product/base-info/">
+          <div class="notification is-info">
+            <p class="title is-4 has-text-centered">1. 基本情報</p>
+            <ul>
+              <li>・基本情報</li>
+              <li>・プラン詳細</li>
+              <li>・集合場所</li>
+            </ul>
+          </div>
+        </a>
+        <a class="column is-one-third post-list" href="/product/detail-info/">
+          <div class="notification is-info">
+            <p class="title is-4 has-text-centered">2. 詳細情報</p>
+            <ul>
+              <li>・注意事項・その他</li>
+              <li>・取消料</li>
+              <li>・お申し込み</li>
+              <li>・質問事項</li>
+            </ul>
+          </div>
+        </a>
+        <a class="column is-one-third post-list" href="/product/plan/">
+          <div class="notification is-info">
+            <p class="title is-4 has-text-centered">3. プラン内容</p>
+          </div>
+        </a>
+        <a class="column is-one-third post-list" href="/product/price/setting.html">
+          <div class="notification is-info">
+            <p class="title is-4 has-text-centered">4. 代金</p>
+          </div>
+        </a>
+        <a class="column is-one-third post-list" href="/product/calendar/setting.html">
+          <div class="notification is-info">
+            <p class="title is-4 has-text-centered">5. カレンダー</p>
+          </div>
+        </a>
+        <a class="column is-one-third post-list" href="/product/release/">
+          <div class="notification is-info">
+            <p class="title is-4 has-text-centered">6. 公開設定</p>
+          </div>
         </a>
     </div> -->
-</div>
 
 </main>
 <!-- END main -->

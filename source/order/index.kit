@@ -8,9 +8,9 @@
 
 <!-- @import '/source/kit/global-nav' -->
 
-<div class="container section">
+<div class="container">
 
-    <div class="breadcrumbs mb-30">
+    <div class="breadcrumbs section">
         <div class="notification">
             <ul class="is-clearfix">
               <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <div class="columns">
+    <div class="columns section">
         <div class="column is-3 is-hidden-mobile">
 
 <!-- @import '/source/kit/side' -->
@@ -124,6 +124,32 @@
                 </td>
             </tr>
             <tr>
+                <th>催行日</th>
+                <td>
+                    <div class="columns">
+                        <div class="column is-5">
+                            <p class="control has-icon has-icon-right">
+                                <input class="input js-datepicker" type="text" placeholder="日付範囲">
+                                <span class="icon is-small">
+                                  <i class="fa fa-calendar"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="column is-1">
+                            <p>〜</p>
+                        </div>
+                        <div class="column is-5">
+                            <p class="control has-icon has-icon-right">
+                                <input class="input js-datepicker" type="text" placeholder="日付範囲">
+                                <span class="icon is-small">
+                                  <i class="fa fa-calendar"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
                 <th>決済種別</th>
                 <td>
                     <p class="control">
@@ -159,8 +185,10 @@
         <tr>
           <th class="order-image"></th>
           <th class="order-date">受注日</th>
+          <th class="order-eventday">催行日</th>
           <th class="order-number">申込番号</th>
           <th class="order-name">お名前</th>
+          <th class="order-quantity">数量</th>
           <th class="order-payment">支払方法</th>
           <th class="order-amount">合計金額</th>
           <th class="order-status">対応状況</th>
@@ -174,10 +202,12 @@
                 <img src="http://bulma.io/images/placeholders/128x128.png">
               </p>
           </td>
-          <td class="order-date">2017/03/01<br />15:00</td>
-          <td class="order-number">order000023</td>
+          <td class="order-date">17/03/01<br />15:00</td>
+          <td class="order-eventday">17/03/22</td>
+          <td class="order-number">000023</td>
           <td class="order-name">山田 太朗</td>
-          <td class="order-payment">クレジットカード</td>
+          <td class="order-quantity">2</td>
+          <td class="order-payment">クレカ</td>
           <td class="order-amount">128,000</td>
           <td class="order-status">入金待ち</td>
           <td class="order-edit"><a href="/order/edit">詳細</a></td>
@@ -188,9 +218,11 @@
                   <img src="http://bulma.io/images/placeholders/128x128.png">
                 </p>
             </td>
-          <td class="order-date">2017/03/01<br />14:00</td>
-          <td class="order-number">order000021</td>
+          <td class="order-date">17/03/01<br />14:00</td>
+          <td class="order-eventday">17/03/22</td>
+          <td class="order-number">000021</td>
           <td class="order-name">山田 太朗</td>
+          <td class="order-quantity">2</td>
           <td class="order-payment">コンビニ</td>
           <td class="order-amount">6,000</td>
           <td class="order-status">キャンセル</td>
@@ -202,9 +234,11 @@
                   <img src="http://bulma.io/images/placeholders/128x128.png">
                 </p>
             </td>
-          <td class="order-date">2017/03/01<br />14:00</td>
-          <td class="order-number">order000020</td>
+          <td class="order-date">17/03/01<br />14:00</td>
+          <td class="order-eventday">17/03/22</td>
+          <td class="order-number">000020</td>
           <td class="order-name">山田 太朗</td>
+          <td class="order-quantity">5</td>
           <td class="order-payment">コンビニ</td>
           <td class="order-amount">6,000</td>
           <td class="order-status">入金済み</td>
@@ -216,9 +250,11 @@
                   <img src="http://bulma.io/images/placeholders/128x128.png">
                 </p>
             </td>
-          <td class="order-date">2017/03/01<br />14:00</td>
-          <td class="order-number">order000019</td>
+          <td class="order-date">17/03/01<br />14:00</td>
+          <td class="order-eventday">17/03/22</td>
+          <td class="order-number">000019</td>
           <td class="order-name">山田 太朗</td>
+          <td class="order-quantity">2</td>
           <td class="order-payment">コンビニ</td>
           <td class="order-amount">6,000</td>
           <td class="order-status">決済処理中</td>
@@ -230,9 +266,11 @@
                   <img src="http://bulma.io/images/placeholders/128x128.png">
                 </p>
             </td>
-          <td class="order-date">2017/03/01<br />14:00</td>
-          <td class="order-number">order000018</td>
+          <td class="order-date">17/03/01<br />14:00</td>
+          <td class="order-eventday">17/03/22</td>
+          <td class="order-number">000018</td>
           <td class="order-name">山田 太朗</td>
+          <td class="order-quantity">1</td>
           <td class="order-payment">コンビニ</td>
           <td class="order-amount">6,000</td>
           <td class="order-status">承認待ち</td>

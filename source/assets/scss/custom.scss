@@ -2,6 +2,14 @@
 @import "_style";
 
 
+/*  clear fix
+------------------------*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* =====================
   common styles
 ===================== */
@@ -31,6 +39,16 @@
     }
 }
 
+.alert {
+  padding: 0 1.5rem;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -39,6 +57,36 @@
   products styles
 ===================== */
 .products {
+    &.product-list {
+        // margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        @include max-md {
+          display: block;
+        }
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 2rem 1.5rem;
+            color: #FFF;
+            .list-inner {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .title:not(:last-child) {
+                margin-bottom: 1rem;
+              }
+            }
+        }
+        .notification {
+          // margin-bottom: 1.5rem;
+          // &:not(:nth-of-type(3n)) {
+          //   margin-right: 1.5rem;
+          // }
+
+        }
+    }
     .category {
         ul {
             padding: 0;
@@ -60,6 +108,14 @@
         &:hover {
             opacity: .8;
         }
+    }
+    .post-list {
+      &:hover {
+          opacity: .8;
+      }
+      > div {
+        height: 100%;
+      }
     }
 }
 
@@ -245,6 +301,15 @@
 
 
 /* =====================
+  base-info styles
+===================== */
+.step-btn-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* =====================
   login styles
 ===================== */
 body.login {
@@ -273,17 +338,32 @@ body.login {
 /* =====================
   order styles
 ===================== */
+.home-content {
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
 .order-list {
+    th, td {
+      font-size: 0.95rem;
+    }
     th {
         text-align: center;
+        vertical-align: middle;
     }
     td {
         vertical-align: middle;
+    }
+    .order-eventday {
+        text-align: center;
     }
     .order-number {
         text-align: center;
     }
     .order-name {
+        text-align: center;
+    }
+    .order-quantity {
         text-align: center;
     }
     .order-payment {
@@ -428,6 +508,18 @@ select.is-danger {
 
 
 /* =====================
+  admins styles
+===================== */
+.own-design {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out 0s;
+}
+
+
+
+/* =====================
   filter styles
 ===================== */
 .filter {
@@ -503,6 +595,85 @@ select.is-danger {
 .ui-datepicker-next {
 	float: right;
 }
+
+
+/* =====================
+  calendar timetable
+===================== */
+.remodal-wrapper  {
+  .remodal {
+    max-width: 760px;
+    border-radius: 6px;
+    .remodal-close {
+      left: auto;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      &:before {
+        font-size: 50px;
+        line-height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}
+.timetable-container {
+  h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.timetable {
+  max-width: 800px;
+  overflow: scroll;
+  table {
+    table-layout: fixed;
+    thead {
+      .top-ttl {
+        tr, td {
+          padding: 3px 15px 3px;
+        }
+      }
+      .btn-click {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    tr {
+      th, td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 8px 15px 5px;
+        white-space: nowrap;
+        border: 1px solid #ddd;
+      }
+      th {
+        width: 100px;
+        &.fixed-ttl{
+          position: sticky;
+          left: 0;
+          background: #eee;
+          z-index: 5;
+          &:before{
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 100%;
+            height: 100%;
+            border-left: 1px solid #ddd;
+          }
+        }
+      }
+      td {
+        width: 100px;
+      }
+    }
+  }
+}
+
+
 
 
 /* =====================

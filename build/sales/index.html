@@ -13,6 +13,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
+
 <link rel="stylesheet" href="/assets/css/custom.css">
 <link rel="stylesheet" href="/assets/css/jquery.timepicker.css">
 <!-- Modernizr -->
@@ -25,6 +29,7 @@
 <script src="/assets/js/jquery.timepicker.min.js"></script>
 <!-- DNS prefetch -->
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
 </head>
 
 <body id="top">
@@ -86,9 +91,9 @@
 <!-- END global-nav -->
 
 
-<div class="container section">
+<div class="container">
 
-    <div class="breadcrumbs mb-30">
+    <div class="breadcrumbs section">
         <div class="notification">
             <ul class="is-clearfix">
               <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
@@ -97,35 +102,18 @@
         </div>
     </div>
 
-    <div class="columns">
+    <div class="columns section">
         <div class="column is-3 is-hidden-mobile">
 
 <aside class="menu">
 
-<ul class="menu-list">
-  <li>
-    <p class="menu-label">商品編集</p>
-    <ul>
-      <li><a class="is-active" href="/product/post">基本情報</a></li>
-      <li><a href="/product/post">代金</a></li>
-      <li><a href="/product/post">プラン詳細</a></li>
-      <li><a href="/product/post">集合場所</a></li>
-      <li><a href="/product/post">注意事項・その他</a></li>
-      <li><a href="/product/post">取消料</a></li>
-      <li><a href="/product/post">お申し込み</a></li>
-      <li><a href="/product/post">プラン内容</a></li>
-      <!-- <li><a href="/product/post">エリア・カテゴリ</a></li> -->
-      <li><a href="/product/post">質問事項</a></li>
-      <li><a href="/product/post">公開設定</a></li>
-    </ul>
-  </li>
-</ul>
   <p class="menu-label">
-    一般
+    受注管理
   </p>
   <ul class="menu-list">
-    <li><a href="/">ダッシュボード</a></li>
+    <li><a href="/order" class="is-active">受注一覧</a></li>
   </ul>
+
   <p class="menu-label">
     商品管理
   </p>
@@ -135,6 +123,44 @@
     <li><a href="/product/price">代金設定</a></li>
     <li><a href="/product/calendar">予約カレンダー</a></li>
   </ul>
+
+  <p class="menu-label">
+    設定
+  </p>
+  <ul class="menu-list">
+    <li><a href="/admins">プロフィール</a></li>
+  </ul>
+
+  <p class="menu-label">
+    売上管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/sales">売上一覧・集計</a></li>
+  </ul>
+  <!-- <ul class="menu-list">
+    <li>
+      <p class="menu-label">商品編集</p>
+      <ul>
+        <li><a class="is-active" href="/product/post">基本情報</a></li>
+        <li><a href="/product/post">代金</a></li>
+        <li><a href="/product/post">プラン詳細</a></li>
+        <li><a href="/product/post">集合場所</a></li>
+        <li><a href="/product/post">注意事項・その他</a></li>
+        <li><a href="/product/post">取消料</a></li>
+        <li><a href="/product/post">お申し込み</a></li>
+        <li><a href="/product/post">プラン内容</a></li>
+        <li><a href="/product/post">質問事項</a></li>
+        <li><a href="/product/post">公開設定</a></li>
+      </ul>
+    </li>
+  </ul>
+  <p class="menu-label">
+    一般
+  </p>
+  <ul class="menu-list">
+    <li><a href="/">ダッシュボード</a></li>
+  </ul>
+
   <p class="menu-label">
     固定ページ
   </p>
@@ -142,31 +168,14 @@
     <li><a href="/page/top">トップページ</a></li>
     <li><a href="/page/top_en">トップページ（EN）</a></li>
   </ul>
-  <p class="menu-label">
-    受注管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/order">受注一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    売上管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/sales">売上一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    設定
-  </p>
-  <ul class="menu-list">
-    <li><a href="/admins">プロフィール一覧</a></li>
-  </ul>
+
   <p class="menu-label">
     その他
   </p>
   <ul class="menu-list">
     <li><a href="/faq">運用Q&A</a></li>
     <li><a href="/promotion/banner">バナー掲載について</a></li>
-  </ul>
+  </ul> -->
 </aside>
 
         </div>
@@ -235,7 +244,7 @@
         </tfoot>
           <tbody>
             <tr>
-              <td class="order-date">2017/03/01<br />15:00</td>
+              <td class="order-date">17/03/01<br />15:00</td>
               <td class="order-number">000025</td>
               <td class="order-product-name">商品名A商品名A商品名A</td>
               <td class="order-name">山田 太朗</td>
@@ -244,7 +253,7 @@
               <td class="order-edit"><a href="/order/edit">詳細</a></td>
             </tr>
             <tr>
-              <td class="order-date">2017/03/01<br />15:00</td>
+              <td class="order-date">17/03/01<br />15:00</td>
               <td class="order-number">000020</td>
               <td class="order-product-name">商品名A商品名A商品名A</td>
               <td class="order-name">山田 太朗</td>
@@ -253,7 +262,7 @@
               <td class="order-edit"><a href="/order/edit">詳細</a></td>
             </tr>
             <tr>
-              <td class="order-date">2017/03/01<br />15:00</td>
+              <td class="order-date">17/03/01<br />15:00</td>
               <td class="order-number">000019</td>
               <td class="order-product-name">商品名B商品名B商品名B</td>
               <td class="order-name">山田 太朗</td>
@@ -262,7 +271,7 @@
               <td class="order-edit"><a href="/order/edit">詳細</a></td>
             </tr>
             <tr>
-              <td class="order-date">2017/03/01<br />15:00</td>
+              <td class="order-date">17/03/01<br />15:00</td>
               <td class="order-number">000018</td>
               <td class="order-product-name">商品名B商品名B商品名B</td>
               <td class="order-name">山田 太朗</td>
@@ -271,7 +280,7 @@
               <td class="order-edit"><a href="/order/edit">詳細</a></td>
             </tr>
             <tr>
-              <td class="order-date">2017/03/01<br />15:00</td>
+              <td class="order-date">17/03/01<br />15:00</td>
               <td class="order-number">000010</td>
               <td class="order-product-name">商品名C商品名C商品名C</td>
               <td class="order-name">山田 太朗</td>
@@ -289,77 +298,6 @@
     </div>
 </div>
 
-<div class="section sitemap is-hidden-desktop">
-<aside class="menu">
-
-<ul class="menu-list">
-  <li>
-    <p class="menu-label">商品編集</p>
-    <ul>
-      <li><a class="is-active" href="/product/post">基本情報</a></li>
-      <li><a href="/product/post">代金</a></li>
-      <li><a href="/product/post">プラン詳細</a></li>
-      <li><a href="/product/post">集合場所</a></li>
-      <li><a href="/product/post">注意事項・その他</a></li>
-      <li><a href="/product/post">取消料</a></li>
-      <li><a href="/product/post">お申し込み</a></li>
-      <li><a href="/product/post">プラン内容</a></li>
-      <!-- <li><a href="/product/post">エリア・カテゴリ</a></li> -->
-      <li><a href="/product/post">質問事項</a></li>
-      <li><a href="/product/post">公開設定</a></li>
-    </ul>
-  </li>
-</ul>
-  <p class="menu-label">
-    一般
-  </p>
-  <ul class="menu-list">
-    <li><a href="/">ダッシュボード</a></li>
-  </ul>
-  <p class="menu-label">
-    商品管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/product">商品一覧</a></li>
-    <li><a href="/product/post">商品追加</a></li>
-    <li><a href="/product/price">代金設定</a></li>
-    <li><a href="/product/calendar">予約カレンダー</a></li>
-  </ul>
-  <p class="menu-label">
-    固定ページ
-  </p>
-  <ul class="menu-list">
-    <li><a href="/page/top">トップページ</a></li>
-    <li><a href="/page/top_en">トップページ（EN）</a></li>
-  </ul>
-  <p class="menu-label">
-    受注管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/order">受注一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    売上管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/sales">売上一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    設定
-  </p>
-  <ul class="menu-list">
-    <li><a href="/admins">プロフィール一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    その他
-  </p>
-  <ul class="menu-list">
-    <li><a href="/faq">運用Q&A</a></li>
-    <li><a href="/promotion/banner">バナー掲載について</a></li>
-  </ul>
-</aside>
-
-</div>
 
 <!-- START global-footer -->
 <footer class="global-footer section">

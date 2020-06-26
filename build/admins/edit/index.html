@@ -13,6 +13,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
+
 <link rel="stylesheet" href="/assets/css/custom.css">
 <link rel="stylesheet" href="/assets/css/jquery.timepicker.css">
 <!-- Modernizr -->
@@ -25,6 +29,7 @@
 <script src="/assets/js/jquery.timepicker.min.js"></script>
 <!-- DNS prefetch -->
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
 </head>
 
 <body id="top">
@@ -102,30 +107,13 @@
 
 <aside class="menu">
 
-<ul class="menu-list">
-  <li>
-    <p class="menu-label">商品編集</p>
-    <ul>
-      <li><a class="is-active" href="/product/post">基本情報</a></li>
-      <li><a href="/product/post">代金</a></li>
-      <li><a href="/product/post">プラン詳細</a></li>
-      <li><a href="/product/post">集合場所</a></li>
-      <li><a href="/product/post">注意事項・その他</a></li>
-      <li><a href="/product/post">取消料</a></li>
-      <li><a href="/product/post">お申し込み</a></li>
-      <li><a href="/product/post">プラン内容</a></li>
-      <!-- <li><a href="/product/post">エリア・カテゴリ</a></li> -->
-      <li><a href="/product/post">質問事項</a></li>
-      <li><a href="/product/post">公開設定</a></li>
-    </ul>
-  </li>
-</ul>
   <p class="menu-label">
-    一般
+    受注管理
   </p>
   <ul class="menu-list">
-    <li><a href="/">ダッシュボード</a></li>
+    <li><a href="/order" class="is-active">受注一覧</a></li>
   </ul>
+
   <p class="menu-label">
     商品管理
   </p>
@@ -135,6 +123,44 @@
     <li><a href="/product/price">代金設定</a></li>
     <li><a href="/product/calendar">予約カレンダー</a></li>
   </ul>
+
+  <p class="menu-label">
+    設定
+  </p>
+  <ul class="menu-list">
+    <li><a href="/admins">プロフィール</a></li>
+  </ul>
+
+  <p class="menu-label">
+    売上管理
+  </p>
+  <ul class="menu-list">
+    <li><a href="/sales">売上一覧・集計</a></li>
+  </ul>
+  <!-- <ul class="menu-list">
+    <li>
+      <p class="menu-label">商品編集</p>
+      <ul>
+        <li><a class="is-active" href="/product/post">基本情報</a></li>
+        <li><a href="/product/post">代金</a></li>
+        <li><a href="/product/post">プラン詳細</a></li>
+        <li><a href="/product/post">集合場所</a></li>
+        <li><a href="/product/post">注意事項・その他</a></li>
+        <li><a href="/product/post">取消料</a></li>
+        <li><a href="/product/post">お申し込み</a></li>
+        <li><a href="/product/post">プラン内容</a></li>
+        <li><a href="/product/post">質問事項</a></li>
+        <li><a href="/product/post">公開設定</a></li>
+      </ul>
+    </li>
+  </ul>
+  <p class="menu-label">
+    一般
+  </p>
+  <ul class="menu-list">
+    <li><a href="/">ダッシュボード</a></li>
+  </ul>
+
   <p class="menu-label">
     固定ページ
   </p>
@@ -142,31 +168,14 @@
     <li><a href="/page/top">トップページ</a></li>
     <li><a href="/page/top_en">トップページ（EN）</a></li>
   </ul>
-  <p class="menu-label">
-    受注管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/order">受注一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    売上管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/sales">売上一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    設定
-  </p>
-  <ul class="menu-list">
-    <li><a href="/admins">プロフィール一覧</a></li>
-  </ul>
+
   <p class="menu-label">
     その他
   </p>
   <ul class="menu-list">
     <li><a href="/faq">運用Q&A</a></li>
     <li><a href="/promotion/banner">バナー掲載について</a></li>
-  </ul>
+  </ul> -->
 </aside>
 
         </div>
@@ -374,6 +383,60 @@
               <input class="input" type="text" placeholder="例：http://example.com">
             </p>
         </div>
+
+        <hr>
+
+        <div class="control classification ">
+            <p>独自のヘッダー・フッターを利用する<span class="must">必須</span></p>
+            <ul>
+                <li><label for="own-yes"><input type="radio" name="classification" id="own-yes">はい</label></li>
+                <li><label for="own-no"><input type="radio" name="classification" id="own-no" checked="checked">いいえ</label></li>
+            </ul>
+        </div>
+
+        <div class="control own-design">
+          <div class="mb-20 mt-20">
+            <label class="label">ヘッダー用</label>
+            <div class="control">
+                <label class="label"><span class="help">HTML</span></label>
+                <textarea class="textarea limited" placeholder=""></textarea>
+            </div>
+            <div class="control">
+                <label class="label"><span class="help">CSS</span></label>
+                <textarea class="textarea limited" placeholder=""></textarea>
+            </div>
+          </div>
+          <div class="">
+            <label class="label">フッター用</label>
+            <div class="control">
+                <label class="label"><span class="help">HTML</span></label>
+                <textarea class="textarea limited" placeholder=""></textarea>
+            </div>
+            <div class="control">
+                <label class="label"><span class="help">CSS</span></label>
+                <textarea class="textarea limited" placeholder=""></textarea>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="control control-d2">
+            <label class="label">
+                申込可能期間入力<span class="must">区分選択時必須</span>
+                <span class="help">当日の場合は0日後からと入力してください。</span>
+            </label>
+            <div class="">
+                <p class="control has-addons">
+                    <input class="input is-danger" type="number" min="0" placeholder="例：2" disabled="disabled">
+                    <span class="button is-disabled">日後</span>
+                    <input class="input js-timepicker" type="text" placeholder="時間">
+                    <span class="button is-disabled">時まで</span>
+                    <span class="no-frame">〜</span>
+                    <input class="input is-danger" type="number" min="0" placeholder="例：3" disabled="disabled">
+                    <span class="button is-disabled">日後まで</span>
+                </p>
+            </div>
+        </div> -->
     </section>
 
     <hr>
@@ -931,77 +994,6 @@
     </div>
 </div>
 
-<div class="section sitemap is-hidden-desktop">
-<aside class="menu">
-
-<ul class="menu-list">
-  <li>
-    <p class="menu-label">商品編集</p>
-    <ul>
-      <li><a class="is-active" href="/product/post">基本情報</a></li>
-      <li><a href="/product/post">代金</a></li>
-      <li><a href="/product/post">プラン詳細</a></li>
-      <li><a href="/product/post">集合場所</a></li>
-      <li><a href="/product/post">注意事項・その他</a></li>
-      <li><a href="/product/post">取消料</a></li>
-      <li><a href="/product/post">お申し込み</a></li>
-      <li><a href="/product/post">プラン内容</a></li>
-      <!-- <li><a href="/product/post">エリア・カテゴリ</a></li> -->
-      <li><a href="/product/post">質問事項</a></li>
-      <li><a href="/product/post">公開設定</a></li>
-    </ul>
-  </li>
-</ul>
-  <p class="menu-label">
-    一般
-  </p>
-  <ul class="menu-list">
-    <li><a href="/">ダッシュボード</a></li>
-  </ul>
-  <p class="menu-label">
-    商品管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/product">商品一覧</a></li>
-    <li><a href="/product/post">商品追加</a></li>
-    <li><a href="/product/price">代金設定</a></li>
-    <li><a href="/product/calendar">予約カレンダー</a></li>
-  </ul>
-  <p class="menu-label">
-    固定ページ
-  </p>
-  <ul class="menu-list">
-    <li><a href="/page/top">トップページ</a></li>
-    <li><a href="/page/top_en">トップページ（EN）</a></li>
-  </ul>
-  <p class="menu-label">
-    受注管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/order">受注一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    売上管理
-  </p>
-  <ul class="menu-list">
-    <li><a href="/sales">売上一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    設定
-  </p>
-  <ul class="menu-list">
-    <li><a href="/admins">プロフィール一覧</a></li>
-  </ul>
-  <p class="menu-label">
-    その他
-  </p>
-  <ul class="menu-list">
-    <li><a href="/faq">運用Q&A</a></li>
-    <li><a href="/promotion/banner">バナー掲載について</a></li>
-  </ul>
-</aside>
-
-</div>
 
 <!-- START global-footer -->
 <footer class="global-footer section">
@@ -1086,7 +1078,37 @@
 </script> -->
 
 <script type="text/javascript">
+
 $(function() {
+    // 独自のheader.footer
+    $('[name="classification"]:radio').change( function() {
+        if($('[id=own-no]').prop('checked')) {
+            $('.own-design').css({
+                'opacity': '0',
+                'height': '0'
+            });
+        } else if($('[id=own-yes]').prop('checked')){
+            $('.own-design').css({
+                'opacity': '1',
+                'height': 'auto'
+            });
+        }
+    });
+    // $('.control-d1').css('opacity','.2');
+    // $('[name="classification"]:radio').change( function() {
+    //     if($('[id=d2]').prop('checked')) {
+    //         $('.control-d1 input').attr("disabled", "disabled");
+    //         $('.control-d2 input').removeAttr("disabled");
+    //         $('.control-d1').css('opacity','.2');
+    //         $('.control-d2').css('opacity','1');
+    //     } else if($('[id=d1]').prop('checked')){
+    //         $('.control-d1 input').removeAttr("disabled");
+    //         $('.control-d2 input').attr("disabled", "disabled");
+    //         $('.control-d1').css('opacity','1');
+    //         $('.control-d2').css('opacity','.2');
+    //     }
+    // });
+
     // 旅行業に基づく旅行商品の取り扱い
     $('[name=travel-agency-available]').click(function() {
         if ($('[name=travel-agency-available]:eq(0)').prop('checked')) {

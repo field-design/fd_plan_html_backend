@@ -97,7 +97,8 @@
         <div class="notification">
             <ul class="is-clearfix">
               <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
-              <li><span>商品編集</span></li>
+              <li><a href="/product/post/"><span>商品編集</span></a></li>
+              <li><span>代金設定</span></li>
             </ul>
         </div>
     </div>
@@ -194,112 +195,297 @@
 <!-- START main -->
 <main>
 
-    <h2 class="title is-3">商品編集</h2>
+    <h2 class="title is-3">代金設定</h2>
 
-    <div class="products columns product-list">
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/base-info/">
-          <div class="list-inner">
-            <span>
-              <p class="title is-4 has-text-centered">1. 基本情報</p>
-              <ul>
-                <li>・基本情報</li>
-                <li>・プラン詳細</li>
-                <li>・集合場所</li>
-              </ul>
+<div class="">
+
+<section class="input-area price">
+
+    <div class="conts-body">
+
+        <div class="control price-wrap">
+            <label class="label">
+                <span class="help">コース毎に代金を設定してください。</span>
+            </label>
+        </div>
+
+        <div class="control">
+            <p class="control has-icon has-icon-right">
+                <span class="select is-fullwidth">
+                  <select>
+                    <option>午前コース</option>
+                    <option>午後コース</option>
+                    <option>終日コース</option>
+                  </select>
+                </span>
+            </p>
+        </div>
+
+        <label class="label">代金タイトル<span class="must">必須</span></label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">16</span>文字</strong></div>
+            <input class="input is-danger limited" type="text" placeholder="例：おひとりさま" maxlength="16">
+        </div>
+
+        <label class="label">数量見出し<span class="must">必須</span></label>
+        <div class="control">
+            <div class="help counter">残り<span class="count">16</span>文字</strong></div>
+            <input class="input is-danger limited" type="text" placeholder="例：人数や台数など" maxlength="16">
+        </div>
+
+        <div class="notification">
+            <button class="delete" onclick="((this).parentNode.remove())"></button>
+            <div class="columns">
+                <div class="column">
+                    <label class="label">区分<span class="must">必須</span></label>
+                    <p class="control has-icon has-icon-right">
+                        <span class="select is-fullwidth">
+                          <select>
+                            <option>おとな・こども同額</option>
+                            <option>おとな</option>
+                            <option>こども</option>
+                            <option>大学生</option>
+                            <option>高校生</option>
+                            <option>中学生</option>
+                            <option>小学生</option>
+                            <option>幼児</option>
+                            <option>その他</option>
+                            <option>フリー入力</option>
+                          </select>
+                        </span>
+                    </p>
+                </div>
+                <div class="column">
+                    <label class="label">区分フリー入力</label>
+                    <input class="input" type="text" placeholder="例：グループパック">
+                </div>
+            </div>
+            <div class="quantity-price">
+                <label class="label">数量・価格</label>
+                <p class="control column-flex has-icon has-icon-right">
+                    <span>数量　</span>
+                    <span class="select">
+                      <select>
+                        <option>-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                    </span>
+                    <span>　まで　</span>
+                    <span>
+                        <input class="input" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                </p>
+                <p class="control column-flex has-icon has-icon-right">
+                    <span>数量１あたり<span class="must">必須</span>　</span>
+                    <span>
+                        <input class="input is-danger" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                </p>
+                <p class="control column-flex has-icon has-icon-right">
+                    <span>数量範囲　</span>
+                    <span>
+                        <input class="input" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                    <span>　〜　</span>
+                    <span>
+                        <input class="input" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                </p>
+            </div>
+            <div>
+                <label class="label">条件
+                    <span class="help">最大5件まで追加可能</span>
+                </label>
+                <div class="control sortable">
+                    <div class="control has-addons">
+                        <a class="button">
+                          <i class="fa fa-navicon"></i>
+                        </a>
+                        <input class="input is-expanded" type="text" placeholder="例：6歳以上">
+                        <a class="button remove" onclick="((this).parentNode.remove())">
+                          <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                    <div class="control has-addons">
+                        <a class="button">
+                          <i class="fa fa-navicon"></i>
+                        </a>
+                        <input class="input is-expanded" type="text" placeholder="例：6歳以上">
+                        <a class="button remove" onclick="((this).parentNode.remove())">
+                          <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="control add-btn">
+                  <a class="button is-primary">
+                    <span class="icon">
+                      <i class="fa fa-plus-circle"></i>
+                    </span>
+                    <span>条件を追加</span>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="notification">
+            <button class="delete" onclick="((this).parentNode.remove())"></button>
+            <div class="columns">
+                <div class="column">
+                    <label class="label">区分<span class="must">必須</span></label>
+                    <p class="control has-icon has-icon-right">
+                        <span class="select is-fullwidth">
+                          <select>
+                            <option>おとな・こども同額</option>
+                            <option>おとな</option>
+                            <option>こども</option>
+                            <option>大学生</option>
+                            <option>高校生</option>
+                            <option>中学生</option>
+                            <option>小学生</option>
+                            <option>幼児</option>
+                            <option>その他</option>
+                          </select>
+                        </span>
+                    </p>
+                </div>
+                <div class="column">
+                    <label class="label">区分フリー入力</label>
+                    <input class="input" type="text" placeholder="例：グループパック">
+                </div>
+            </div>
+            <div class="quantity-price">
+                <label class="label">数量・価格</label>
+                <p class="control column-flex has-icon has-icon-right">
+                    <span>数量　</span>
+                    <span class="select">
+                      <select>
+                        <option>-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                    </span>
+                    <span>　まで　</span>
+                    <span>
+                        <input class="input" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                </p>
+                <p class="control column-flex has-icon has-icon-right">
+                    <span>数量１あたり<span class="must">必須</span>　</span>
+                    <span>
+                        <input class="input is-danger" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                </p>
+                <p class="control column-flex has-icon has-icon-right">
+                    <span>数量範囲　</span>
+                    <span>
+                        <input class="input" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                    <span>　〜　</span>
+                    <span>
+                        <input class="input" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                </p>
+            </div>
+            <div>
+                <label class="label">条件
+                    <span class="help">最大5件まで追加可能</span>
+                </label>
+                <div class="control sortable">
+                    <div class="control has-addons">
+                        <a class="button">
+                          <i class="fa fa-navicon"></i>
+                        </a>
+                        <input class="input is-expanded" type="text" placeholder="例：6歳以上">
+                        <a class="button remove" onclick="((this).parentNode.remove())">
+                          <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                    <div class="control has-addons">
+                        <a class="button">
+                          <i class="fa fa-navicon"></i>
+                        </a>
+                        <input class="input is-expanded" type="text" placeholder="例：6歳以上">
+                        <a class="button remove" onclick="((this).parentNode.remove())">
+                          <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="control add-btn">
+                  <a class="button is-primary">
+                    <span class="icon">
+                      <i class="fa fa-plus-circle"></i>
+                    </span>
+                    <span>条件を追加</span>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="control add-btn">
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus-circle"></i>
             </span>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/detail-info/">
-          <div class="list-inner">
-            <span>
-              <p class="title is-4 has-text-centered">2. 詳細情報</p>
-              <ul>
-                <li>・注意事項・その他</li>
-                <li>・取消料</li>
-                <li>・お申し込み</li>
-                <li>・質問事項</li>
-              </ul>
-            </span>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/plan/">
-          <div class="list-inner">
-            <p class="title is-4 has-text-centered">3. プラン内容</p>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/price/setting.html">
-          <div class="list-inner">
-            <p class="title is-4 has-text-centered">4. 代金</p>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/calendar/setting.html">
-          <div class="list-inner">
-            <p class="title is-4 has-text-centered">5. カレンダー</p>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/release/">
-          <div class="list-inner">
-            <p class="title is-4 has-text-centered">6. 公開設定</p>
-          </div>
-        </a>
-      </div>
+            <span>代金を追加</span>
+          </a>
+        </div>
     </div>
+</section>
 
 
-    <!-- <div class="products columns is-multiline">
-        <a class="column is-one-third post-list" href="/product/base-info/">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">1. 基本情報</p>
-            <ul>
-              <li>・基本情報</li>
-              <li>・プラン詳細</li>
-              <li>・集合場所</li>
-            </ul>
-          </div>
+</div>
+
+<div class="control save-point">
+    <p class="has-text-centered">
+        <a class="button is-success">
+            <span class="icon">
+                <i class="fa fa-save"></i>
+            </span>
+            <span>変更を保存</span>
         </a>
-        <a class="column is-one-third post-list" href="/product/detail-info/">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">2. 詳細情報</p>
-            <ul>
-              <li>・注意事項・その他</li>
-              <li>・取消料</li>
-              <li>・お申し込み</li>
-              <li>・質問事項</li>
-            </ul>
-          </div>
-        </a>
-        <a class="column is-one-third post-list" href="/product/plan/">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">3. プラン内容</p>
-          </div>
-        </a>
-        <a class="column is-one-third post-list" href="/product/price/setting.html">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">4. 代金</p>
-          </div>
-        </a>
-        <a class="column is-one-third post-list" href="/product/calendar/setting.html">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">5. カレンダー</p>
-          </div>
-        </a>
-        <a class="column is-one-third post-list" href="/product/release/">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">6. 公開設定</p>
-          </div>
-        </a>
-    </div> -->
+    </p>
+</div>
 
 </main>
 <!-- END main -->
@@ -392,7 +578,7 @@ $( function() {
 
 /***************************
 アコーディオン
-****************************/
+
 var start_section = 0;
 
 function menuScroll(index) {
@@ -472,6 +658,7 @@ $(window).load(function(){
     }
     $('.menu-product li:nth-child(' + (start_section + 1) + ') a').addClass('is-active');
 });
+****************************/
 
 /***************************
 datepicker

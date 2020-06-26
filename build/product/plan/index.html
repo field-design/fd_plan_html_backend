@@ -97,7 +97,8 @@
         <div class="notification">
             <ul class="is-clearfix">
               <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
-              <li><span>商品編集</span></li>
+              <li><a href="/product/post/"><span>商品編集</span></a></li>
+              <li><span>プラン内容</span></li>
             </ul>
         </div>
     </div>
@@ -194,112 +195,179 @@
 <!-- START main -->
 <main>
 
-    <h2 class="title is-3">商品編集</h2>
+    <h2 class="title is-3">プラン内容</h2>
 
-    <div class="products columns product-list">
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/base-info/">
-          <div class="list-inner">
-            <span>
-              <p class="title is-4 has-text-centered">1. 基本情報</p>
-              <ul>
-                <li>・基本情報</li>
-                <li>・プラン詳細</li>
-                <li>・集合場所</li>
-              </ul>
+<div class="">
+
+<section class="input-area message plan-point">
+    <!-- <h2 class="conts-ttl subtitle message-header">
+        プラン内容
+        <span class="icon">
+          <i class="fa fa-plus-circle"></i>
+        </span>
+    </h2> -->
+    <div class="conts-body message-body">
+        <div class="control sortable numbering">
+
+            <div class="control numbered">
+                <div class="control box notification">
+                    <button class="delete" onclick="((this).parentNode.parentNode.remove())"></button>
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p class="subtitle is-5">
+                                <a class="button">
+                                  <i class="fa fa-navicon"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                    </nav>
+                    <label class="label">画像</label>
+                    <span class="help">横幅800px以上の画像を1枚登録してください。横長画像を推奨。</span>
+                    <div class="control">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <label class="button" for="main_img">画像を選択してください</label>
+                            <input type="file" name="main_img" id="main_img" style="display:none;">
+                        </form>
+                    </div>
+                    <div class="notification main-image">
+                        <button class="delete" onclick="((this).parentNode.remove())"></button>
+                        <figure class="image">
+                            <img src="http://placehold.jp/800x600.png">
+                        </figure>
+                    </div>
+
+                    <label class="label">タイトル<span class="must">必須</span></label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                        <input class="input is-danger limited" type="text" placeholder="例：米騒動発祥の地" maxlength="64">
+                    </div>
+
+                    <label class="label">説明文</label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">128</span>文字</strong></div>
+                        <textarea class="textarea limited" placeholder="例：蜃気楼の見える道、”しんきろうロード”は、魚津市の海沿い海岸線を南北に走る道路の通称です。" maxlength="128"></textarea>
+                    </div>
+
+                    <label class="label">外部リンク<br />
+                        <span class="help">外部リンクを掲載する場合のみ入力してください。</span>
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="例：http://example.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="control numbered">
+                <div class="control box notification">
+                    <button class="delete" onclick="((this).parentNode.parentNode.remove())"></button>
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p class="subtitle is-5">
+                                <a class="button">
+                                  <i class="fa fa-navicon"></i>
+                                </a>
+                            </p>
+                          </div>
+                        </div>
+                    </nav>
+                    <label class="label">画像</label>
+                    <span class="help">横幅800px以上の画像を1枚登録してください。横長画像を推奨。</span>
+                    <div class="control">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <label class="button" for="main_img">画像を選択してください</label>
+                            <input type="file" name="main_img" id="main_img" style="display:none;">
+                        </form>
+                    </div>
+                    <div class="notification main-image">
+                        <button class="delete" onclick="((this).parentNode.remove())"></button>
+                        <figure class="image">
+                            <img src="http://placehold.jp/800x600.png">
+                        </figure>
+                    </div>
+
+                    <label class="label">タイトル<span class="must">必須</span></label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">64</span>文字</strong></div>
+                        <input class="input is-danger limited" type="text" placeholder="例：米騒動発祥の地" maxlength="64">
+                    </div>
+
+                    <label class="label">説明文</label>
+                    <div class="control">
+                        <div class="help counter">残り<span class="count">128</span>文字</strong></div>
+                        <textarea class="textarea limited" placeholder="例：蜃気楼の見える道、”しんきろうロード”は、魚津市の海沿い海岸線を南北に走る道路の通称です。" maxlength="128"></textarea>
+                    </div>
+
+                    <label class="label">外部リンク<br />
+                        <span class="help">外部リンクを掲載する場合のみ入力してください。</span>
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="例：http://example.com">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="control add-btn">
+          <a class="button is-primary">
+            <span class="icon">
+              <i class="fa fa-plus-circle"></i>
             </span>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/detail-info/">
-          <div class="list-inner">
-            <span>
-              <p class="title is-4 has-text-centered">2. 詳細情報</p>
-              <ul>
-                <li>・注意事項・その他</li>
-                <li>・取消料</li>
-                <li>・お申し込み</li>
-                <li>・質問事項</li>
-              </ul>
-            </span>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/plan/">
-          <div class="list-inner">
-            <p class="title is-4 has-text-centered">3. プラン内容</p>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/price/setting.html">
-          <div class="list-inner">
-            <p class="title is-4 has-text-centered">4. 代金</p>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/calendar/setting.html">
-          <div class="list-inner">
-            <p class="title is-4 has-text-centered">5. カレンダー</p>
-          </div>
-        </a>
-      </div>
-      <div class="column is-one-third">
-        <a class="post-list column notification is-info" href="/product/release/">
-          <div class="list-inner">
-            <p class="title is-4 has-text-centered">6. 公開設定</p>
-          </div>
-        </a>
-      </div>
+            <span>内容を追加</span>
+          </a>
+          <span class="help">最大10件まで追加可能</span>
+        </div>
+
+        <!-- <div class="control save-point">
+            <p class="control has-addons has-addons-centered">
+                <a class="button is-success">
+                    <span class="icon">
+                        <i class="fa fa-save"></i>
+                    </span>
+                    <span>変更を保存</span>
+                </a>
+            </p>
+        </div> -->
     </div>
+</section>
 
 
-    <!-- <div class="products columns is-multiline">
-        <a class="column is-one-third post-list" href="/product/base-info/">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">1. 基本情報</p>
-            <ul>
-              <li>・基本情報</li>
-              <li>・プラン詳細</li>
-              <li>・集合場所</li>
-            </ul>
-          </div>
+</div>
+
+<div class="control save-point">
+    <p class="has-text-centered">
+        <a class="button is-success">
+            <span class="icon">
+                <i class="fa fa-save"></i>
+            </span>
+            <span>変更を保存</span>
         </a>
-        <a class="column is-one-third post-list" href="/product/detail-info/">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">2. 詳細情報</p>
-            <ul>
-              <li>・注意事項・その他</li>
-              <li>・取消料</li>
-              <li>・お申し込み</li>
-              <li>・質問事項</li>
-            </ul>
-          </div>
+    </p>
+</div>
+
+<div class="step-btn-field">
+    <p class="prev-btn">
+        <a class="button is-info" href="/product/detail-info/">
+            <span class="icon">
+                <i class="fa fa-angle-left"></i>
+            </span>
+            <span>前のステップへ</span>
         </a>
-        <a class="column is-one-third post-list" href="/product/plan/">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">3. プラン内容</p>
-          </div>
+    </p>
+    <p class="next-btn">
+        <a class="button is-info" href="/product/price/setting.html">
+            <span>次のステップへ</span>
+            <span class="icon">
+                <i class="fa fa-angle-right"></i>
+            </span>
         </a>
-        <a class="column is-one-third post-list" href="/product/price/setting.html">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">4. 代金</p>
-          </div>
-        </a>
-        <a class="column is-one-third post-list" href="/product/calendar/setting.html">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">5. カレンダー</p>
-          </div>
-        </a>
-        <a class="column is-one-third post-list" href="/product/release/">
-          <div class="notification is-info">
-            <p class="title is-4 has-text-centered">6. 公開設定</p>
-          </div>
-        </a>
-    </div> -->
+    </p>
+</div>
 
 </main>
 <!-- END main -->
@@ -392,7 +460,7 @@ $( function() {
 
 /***************************
 アコーディオン
-****************************/
+
 var start_section = 0;
 
 function menuScroll(index) {
@@ -472,6 +540,7 @@ $(window).load(function(){
     }
     $('.menu-product li:nth-child(' + (start_section + 1) + ') a').addClass('is-active');
 });
+****************************/
 
 /***************************
 datepicker

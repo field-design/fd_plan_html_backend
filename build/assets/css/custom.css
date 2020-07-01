@@ -70,6 +70,22 @@
               align-items: center; }
       .products.product-list a .list-inner .title:not(:last-child) {
         margin-bottom: 1rem; }
+    .products.product-list a.entry-item {
+      position: relative;
+      opacity: 0.8; }
+      .products.product-list a.entry-item:hover {
+        opacity: 0.6; }
+      .products.product-list a.entry-item::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background-image: url("/assets/img/icon/icon-check-entry.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 36px;
+        height: 40px; }
 
 .products .category ul {
   padding: 0;
@@ -189,9 +205,6 @@
 .message-body a {
   text-decoration: none; }
 
-.plan-price .course {
-  background: white; }
-
 .plan-point .conts-body .notification,
 .meeting-place .conts-body .notification {
   background: white; }
@@ -280,6 +293,12 @@ body.login footer {
   text-align: right; }
 
 .order-list .order-status {
+  text-align: center; }
+
+.order-list .order-start {
+  text-align: center; }
+
+.order-list .order-use {
   text-align: center; }
 
 .order-list .order-edit {
@@ -482,8 +501,53 @@ select.is-danger {
   float: right; }
 
 /* =====================
-  calendar timetable
+  price
 ===================== */
+.plan-price .course {
+  background: white; }
+
+.regular-stock-price {
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s; }
+
+.lend-time-price {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s; }
+  .lend-time-price .time-setting .input {
+    width: 80px; }
+
+/* =====================
+  calendar
+===================== */
+.regular-stock-calendar {
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s; }
+
+.lend-time-calendar {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s; }
+  .lend-time-calendar .time-setting .input {
+    width: 80px; }
+
+.btn-timeset {
+  padding: 16px 0; }
+
 .remodal-wrapper .remodal {
   max-width: 760px;
   border-radius: 6px; }

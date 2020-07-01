@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- @import '/source/kit/head' -->
+<body id="top">
+<!-- @import '/source/kit/gtm' -->
+
+<!-- @import '/source/kit/global-header' -->
+
+<!-- @import '/source/kit/global-nav' -->
+
+<div class="container">
+
+    <div class="breadcrumbs section">
+        <div class="notification">
+            <ul class="is-clearfix">
+              <li><a href="/admin"><span class="icon is-small"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+              <li><span>予約状況確認カレンダー</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="alert mb-30">
+        <div class="message is-success">
+            <div class="message-header">
+                <p>記事を保存しました</p>
+                <button class="delete" aria-label="delete" onclick="((this).parentNode.parentNode.parentNode.remove())"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns section">
+        <div class="column is-3 is-hidden-mobile">
+<!-- @import '/source/kit/side' -->
+        </div>
+        <div class="column is-9">
+<!-- START main -->
+<main>
+
+    <h2 class="title is-3">予約状況確認カレンダー</h2>
+
+<!-- @import '/source/kit/calendar-situation' -->
+
+</main>
+
+
+
+<div data-remodal-id="modal-content" class="remodal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="">
+      <h2 class="title is-4">予約一覧</h2>
+      <table class="order-list table">
+        <thead>
+          <tr>
+            <th>申込番号</th>
+            <th>お名前</th>
+            <th>人数</th>
+            <th>スタート時間</th>
+            <th>利用時間</th>
+            <th>対応状況</th>
+            <th>詳細</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="order-number">000019</td>
+            <td class="order-name">山田 太朗</td>
+            <td class="order-quantity">2</td>
+            <td class="order-start">10:00</td>
+            <td class="order-use">2時間</td>
+            <td class="order-status">入金待ち</td>
+            <td class="order-edit"><a href="/order/edit">詳細</a></td>
+          </tr>
+          <tr>
+            <td class="order-number">000018</td>
+            <td class="order-name">鈴木 花子</td>
+            <td class="order-quantity">5</td>
+            <td class="order-start">14:00</td>
+            <td class="order-use">1時間</td>
+            <td class="order-status">入金済み</td>
+            <td class="order-edit"><a href="/order/edit">詳細</a></td>
+          </tr>
+          <tr>
+            <td class="order-number">000017</td>
+            <td class="order-name">山田 太朗</td>
+            <td class="order-quantity">2</td>
+            <td class="order-start">10:00</td>
+            <td class="order-use">2時間</td>
+            <td class="order-status">入金待ち</td>
+            <td class="order-edit"><a href="/order/edit">詳細</a></td>
+          </tr>
+          <tr>
+            <td class="order-number">000016</td>
+            <td class="order-name">鈴木 花子</td>
+            <td class="order-quantity">1</td>
+            <td class="order-start">17:00</td>
+            <td class="order-use">1時間</td>
+            <td class="order-status">決済処理中</td>
+            <td class="order-edit"><a href="/order/edit">詳細</a></td>
+          </tr>
+          <tr>
+            <td class="order-number">000015</td>
+            <td class="order-name">山田 太朗</td>
+            <td class="order-quantity">2</td>
+            <td class="order-start">12:00</td>
+            <td class="order-use">6時間</td>
+            <td class="order-status">入金済み</td>
+            <td class="order-edit"><a href="/order/edit">詳細</a></td>
+          </tr>
+          <tr>
+            <td class="order-number">000013</td>
+            <td class="order-name">鈴木 花子</td>
+            <td class="order-quantity">2</td>
+            <td class="order-start">16:00</td>
+            <td class="order-use">2時間</td>
+            <td class="order-status">入金済み</td>
+            <td class="order-edit"><a href="/order/edit">詳細</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <p class="control">
+        <a class="button is-primary is-pulled-right" href="/order">
+          <span class="icon">
+            <i class="fa fa-angle-right"></i>
+          </span>
+          <span>さらに見る</span>
+        </a>
+      </p> -->
+  </div>
+
+</div>
+
+
+
+
+<!-- END main -->
+        </div>
+    </div>
+</div>
+
+<!-- @import '/source/kit/global-footer' -->
+
+<!-- @import '/source/kit/fonts' -->
+
+<!-- @import '/source/kit/commonscript' -->
+
+<!-- @import '/source/kit/gmap' -->
+
+<!-- Page Script -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
+<script>
+
+/***************************
+datepicker
+****************************/
+$(function() {
+    $('.js-datepicker').datepicker();
+    $('.js-timepicker').timepicker({
+        'timeFormat': 'H:i',
+        'scrollDefault': 'now',
+        'step': 15
+    });
+});
+
+/***************************
+予約区分
+****************************/
+$(function() {
+    $('[name="classification"]:radio').change( function() {
+        if($('[id=d1]').prop('checked')){
+            $('.control-d1 input').removeAttr("disabled");
+            $('.control-d2 input').attr("disabled", "disabled");
+            $('.control-d1').css('opacity','1');
+            $('.control-d2').css('opacity','.2');
+        } else if ($('[id=d2]').prop('checked')) {
+            $('.control-d1 input').attr("disabled", "disabled");
+            $('.control-d2 input').removeAttr("disabled");
+            $('.control-d1').css('opacity','.2');
+            $('.control-d2').css('opacity','1');
+        }
+    });
+});
+
+</script>
+
+
+<!-- @import '/source/kit/end' -->
+</body>
+</html>

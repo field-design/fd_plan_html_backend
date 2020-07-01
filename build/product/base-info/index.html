@@ -134,6 +134,7 @@
     <li><a href="/product/post">商品追加</a></li>
     <li><a href="/product/price">代金設定</a></li>
     <li><a href="/product/calendar">予約カレンダー</a></li>
+    <li><a href="/product/situation">予約状況</a></li>
   </ul>
 
   <p class="menu-label">
@@ -766,19 +767,6 @@ $(window).load(function(){
 ****************************/
 
 /***************************
-datepicker
-****************************/
-$(function() {
-    $('.js-datepicker').datepicker();
-    $('.js-timepicker').timepicker({
-        'timeFormat': 'H:i',
-        'scrollDefault': 'now',
-        'step': 15
-    });
-});
-
-
-/***************************
 限定公開URL
 ****************************/
 $('.limited-link-url').hide();
@@ -802,7 +790,6 @@ $('[name=multilanguage]').click(function() {
     }
 });
 </script>
-
 
 
 

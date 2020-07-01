@@ -42,11 +42,24 @@
 
     <h2 class="title is-3">代金設定</h2>
 
-<div class="">
+    <div class="control classification ">
+        <ul>
+            <li><label for="regular-stock"><input type="radio" name="select-price" id="regular-stock" checked="checked">通常在庫</label></li>
+            <li><label for="lend-time"><input type="radio" name="select-price" id="lend-time">時間貸し</label></li>
+        </ul>
+    </div>
 
-<!-- @import '/source/kit/plan/price' -->
+    <hr>
 
-</div>
+
+    <div class="regular-stock-price">
+      <!-- @import '/source/kit/plan/price' -->
+    </div>
+
+    <div class="lend-time-price">
+      <!-- @import '/source/kit/plan/price-lend-time' -->
+    </div>
+
 
 <div class="control save-point">
     <p class="has-text-centered">
@@ -69,7 +82,7 @@
         </a>
     </p>
     <p class="next-btn">
-        <a class="button is-info" href="/product/calendar/setting.html">
+        <a class="button is-info" href="/product/calendar/setting3.html">
             <span>次のステップへ</span>
             <span class="icon">
                 <i class="fa fa-angle-right"></i>
@@ -142,88 +155,31 @@ $( function() {
 } );
 
 /***************************
-アコーディオン
-
-var start_section = 0;
-
-function menuScroll(index) {
-    var target = $('.js-accordion section:nth-child(' + index + ')');
-    var position = target.offset().top + 45;
-    $('body,html').animate({scrollTop:position}, 400, 'swing');
-}
-$('.menu-product li:not(last-child) a').click(function(){
-    var index = $('.menu-product li').index($(this).parent());
-    $('.js-accordion').accordion({
-        active: index
-    });
-
-});
-var cnt = 0;
-$('.menu-product li:last-child a').click(function(){
-    $('.js-accordion').accordion({
-        active : false,
-        collapsible : true
-    });
-    if(cnt == 0) {
-        cnt++;
-        $(this).click();
-    }
-});
-
-$(document).ready( function() {
-    $('.js-accordion').accordion({
-        header: ".conts-ttl",
-        active: start_section,
-        heightStyle: "content",
-        collapsible: true,
-        icons: {
-            header: "ui-icon-pin-w",
-            activeHeader: "ui-icon-circle-arrow-s"
-        },
-        beforeActivate: function(event, ui) {
-            //アコーディオンクローズ
-            if(ui.oldHeader[0]) {
-                var objOldHeader = $('#' + ui.oldHeader[0].id);
-                objOldHeader.find('i').removeClass('fa-minus-circle');
-                objOldHeader.find('i').addClass('fa-plus-circle');
-                var oldIndex = $('.js-accordion section').index(objOldHeader.parents('section'));
-                $('.menu-product li:nth-child(' + (oldIndex + 1) + ') a').removeClass('is-active');
-            } else {
-                $('.menu-product li:last-child a').removeClass('is-active');
-            }
-
-            //アコーディオンオープン
-            if(ui.newHeader[0]) {
-                var objNewHeader = $('#' + ui.newHeader[0].id);
-                objNewHeader.find('i').removeClass('fa-plus-circle');
-                objNewHeader.find('i').addClass('fa-minus-circle');
-                var newIndex = $('.js-accordion section').index(objNewHeader.parents('section'));
-                $('.menu-product li:nth-child(' + (newIndex + 1) + ') a').addClass('is-active');
-            } else {
-                $('.menu-product li:last-child a').addClass('is-active');
-            }
-            if(oldIndex !== undefined && newIndex !== undefined) {
-                if(oldIndex < newIndex) {
-                    menuScroll(oldIndex + 1);
-                } else {
-                    menuScroll(newIndex);
-                }
-            }
-        },
-        activate: function(event, ui) {
-            initMap();
+設定入力表示切り替え
+****************************/
+$(function() {
+    $('[name="select-price"]:radio').change( function() {
+        if($('[id=lend-time]').prop('checked')) {
+            $('.regular-stock-price').css({
+                'opacity': '0',
+                'height': '0'
+            });
+            $('.lend-time-price').css({
+                'opacity': '1',
+                'height': 'auto'
+            });
+        } else if($('[id=regular-stock]').prop('checked')){
+            $('.regular-stock-price').css({
+                'opacity': '1',
+                'height': 'auto'
+            });
+            $('.lend-time-price').css({
+                'opacity': '0',
+                'height': '0'
+            });
         }
     });
-    //$('.menu-product li:nth-child(' + start_section + ') a').addClass('is-active');
 });
-$(window).load(function(){
-    $('form').animate({opacity: 1}, 300);
-    if(start_section > 0) {
-        menuScroll(start_section + 1);
-    }
-    $('.menu-product li:nth-child(' + (start_section + 1) + ') a').addClass('is-active');
-});
-****************************/
 
 /***************************
 datepicker

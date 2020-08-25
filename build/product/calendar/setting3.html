@@ -195,18 +195,54 @@
 
     <h2 class="title is-3">予約カレンダー</h2>
 
-    <div class="control classification ">
-        <ul>
-            <li><label for="regular-stock"><input type="radio" name="select-calendar" id="regular-stock" checked="checked">通常在庫</label></li>
-            <li><label for="lend-time"><input type="radio" name="select-calendar" id="lend-time">時間貸し</label></li>
-        </ul>
-    </div>
+    <div class="step-btn-field mb-30 pt-20">
+        <p class="prev-btn">
+            <a class="button is-info" href="/product/price/setting3.html">
+                <span class="icon">
+                    <i class="fa fa-angle-left"></i>
+                </span>
+                <span>前のステップへ</span>
+            </a>
+        </p>
+        <p class="next-btn">
+            <a class="button is-info" href="/product/release/">
+                <span>次のステップへ</span>
+                <span class="icon">
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+        </p>
+    </div><!-- /step-btn-field -->
 
     <hr>
 
     <section class="input-area calendar">
 
         <div class="conts-body">
+
+            <div class="control">
+                <label class="label">コース</label>
+                <p class="control has-icon has-icon-right">
+                    <span class="select is-fullwidth">
+                      <select>
+                        <option>午前コース</option>
+                        <option>午後コース</option>
+                        <option>終日コース</option>
+                      </select>
+                    </span>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="control classification ">
+                <ul>
+                    <li><label for="regular-stock"><input type="radio" name="select-calendar" id="regular-stock" checked="checked">通常在庫</label></li>
+                    <li><label for="lend-time"><input type="radio" name="select-calendar" id="lend-time">時間貸し</label></li>
+                </ul>
+            </div>
+
+            <hr>
 
             <div class="calendar-wrap">
                 <div class="regular-stock-calendar">
@@ -215,7 +251,7 @@
                       <span class="help">各日程に在庫設定又は、リクエスト受付可能日を入力してください。<br />コースを設定している場合はコース毎に設定してください。<br />必要に応じてオプションを選択してください。</span>
                   </label>
                   
-                  <div class="control">
+                  <!-- <div class="control">
                       <p class="control has-icon has-icon-right">
                           <span class="select is-fullwidth">
                             <select>
@@ -225,7 +261,7 @@
                             </select>
                           </span>
                       </p>
-                  </div>
+                  </div> -->
                   <div class="input-table">
                       <div class="control is-grouped">
                           <p class="control has-addons">
@@ -2113,7 +2149,7 @@
                       <span class="help">各日程に在庫設定又は、リクエスト受付可能日を入力してください。<br />コースを設定している場合はコース毎に設定してください。<br />必要に応じてオプションを選択してください。</span>
                   </label>
                   
-                  <div class="control">
+                  <!-- <div class="control">
                       <p class="control has-icon has-icon-right">
                           <span class="select is-fullwidth">
                             <select>
@@ -2123,7 +2159,7 @@
                             </select>
                           </span>
                       </p>
-                  </div>
+                  </div> -->
                   <div class="input-table">
                       <div class="control is-grouped">
                           <p class="control has-addons">
@@ -33717,7 +33753,7 @@
 
 <div class="step-btn-field">
     <p class="prev-btn">
-        <a class="button is-info" href="/product/price/setting.html">
+        <a class="button is-info" href="/product/price/setting3.html">
             <span class="icon">
                 <i class="fa fa-angle-left"></i>
             </span>
@@ -33732,7 +33768,7 @@
             </span>
         </a>
     </p>
-</div>
+</div><!-- /step-btn-field -->
 
 </main>
 <!-- END main -->
@@ -33854,6 +33890,7 @@ $(function() {
 });
 
 </script>
+
 
 
 </body>

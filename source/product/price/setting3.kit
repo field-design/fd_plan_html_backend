@@ -40,17 +40,66 @@
 <!-- START main -->
 <main>
 
-    <h2 class="title is-3">代金設定</h2>
+<h2 class="title is-3">代金設定</h2>
+
+<div class="step-btn-field mb-30 pt-20">
+    <p class="prev-btn">
+        <a class="button is-info" href="/product/plan/">
+            <span class="icon">
+                <i class="fa fa-angle-left"></i>
+            </span>
+            <span>前のステップへ</span>
+        </a>
+    </p>
+    <p class="next-btn">
+        <a class="button is-info" href="/product/calendar/setting3.html">
+            <span>次のステップへ</span>
+            <span class="icon">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </a>
+    </p>
+</div><!-- /step-btn-field -->
+
+<div class="conts-body">
+
+    <div class="control price-wrap">
+        <label class="label">
+            <span class="help">コース毎に代金を設定してください。</span>
+        </label>
+    </div>
+
+    <div class="control">
+        <p class="control has-icon has-icon-right">
+            <span class="select is-fullwidth">
+              <select>
+                <option>午前コース</option>
+                <option>午後コース</option>
+                <option>終日コース</option>
+              </select>
+            </span>
+        </p>
+    </div>
+
+    <label class="label">代金タイトル<span class="must">必須</span></label>
+    <div class="control">
+        <div class="help counter">残り<span class="count">16</span>文字</strong></div>
+        <input class="input is-danger limited" type="text" placeholder="例：おひとりさま" maxlength="16">
+    </div>
+
+    <label class="label">数量見出し<span class="must">必須</span></label>
+    <div class="control">
+        <div class="help counter">残り<span class="count">16</span>文字</strong></div>
+        <input class="input is-danger limited" type="text" placeholder="例：人数や台数など" maxlength="16">
+    </div>
 
     <div class="control classification ">
+        <label class="label">在庫種別</label>
         <ul>
             <li><label for="regular-stock"><input type="radio" name="select-price" id="regular-stock" checked="checked">通常在庫</label></li>
             <li><label for="lend-time"><input type="radio" name="select-price" id="lend-time">時間貸し</label></li>
         </ul>
     </div>
-
-    <hr>
-
 
     <div class="regular-stock-price">
       <!-- @import '/source/kit/plan/price' -->
@@ -60,6 +109,7 @@
       <!-- @import '/source/kit/plan/price-lend-time' -->
     </div>
 
+</div><!-- /conts-body -->
 
 <div class="control save-point">
     <p class="has-text-centered">
@@ -89,7 +139,7 @@
             </span>
         </a>
     </p>
-</div>
+</div><!-- /step-btn-field -->
 
 </main>
 <!-- END main -->

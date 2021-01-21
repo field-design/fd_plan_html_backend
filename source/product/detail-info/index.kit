@@ -67,6 +67,8 @@
 
 <!-- @import '/source/kit/plan/cancel' -->
 
+<!-- @import '/source/kit/plan/contract' -->
+
 <!-- @import '/source/kit/plan/plan-course' -->
 
 <!-- @import '/source/kit/plan/survey' -->
@@ -165,6 +167,110 @@ $( function() {
     //     $( this ).parent().remove();
     // });
 } );
+
+$(function() {
+     // 独自のheader.footer
+     if($('[id=own-no]').prop('checked')) {
+         $('.own-design').css({
+             'opacity': '0',
+             'height': '0'
+         });
+     } else if($('[id=own-yes]').prop('checked')){
+         $('.own-design').css({
+             'opacity': '1',
+             'height': 'auto'
+         });
+     }
+     $('[name="use_custom_tag"]:radio').change( function() {
+         if($('[id=own-no]').prop('checked')) {
+             $('.own-design').css({
+                 'opacity': '0',
+                 'height': '0'
+             });
+         } else if($('[id=own-yes]').prop('checked')){
+             $('.own-design').css({
+                 'opacity': '1',
+                 'height': 'auto'
+             });
+         }
+     });
+
+     // 旅行業に基づく旅行商品の取り扱い
+     $('[name=travel-agency-available]').click(function() {
+         if ($('[name=travel-agency-available]:eq(0)').prop('checked')) {
+             $('.travel-agency-input').fadeIn();
+         } else {
+             $('.travel-agency-input').fadeOut();
+         }
+     });
+
+     // 取扱決済
+     $('[name=payment_type_UseCvs]').click(function() {
+         if ($('[name=payment_type_UseCvs]').prop('checked')) {
+             $('.receipt').fadeIn();
+         } else {
+             $('.receipt').fadeOut();
+         }
+     });
+
+     // $('[name=travel-agency-available]').change(function() {
+     //     if ($(this).is(':checked')) {
+     //         $('.travel-agency-input').fadeIn();
+     //     } else {
+     //         $('.travel-agency-input').fadeOut();
+     //     }
+     // }).trigger('change');
+
+     // 約款
+    $('[name=agreement_type]').change(function() {
+        if ($("input:radio[name='agreement_type']:checked").val() == "default") {
+            $('.agreement-default').show();
+            $('.agreement-pdf').hide();
+            $('.agreement-url').hide();
+        } else if ($("input:radio[name='agreement_type']:checked").val() == "pdf") {
+            $('.agreement-pdf').show();
+            $('.agreement-default').hide();
+            $('.agreement-url').hide();
+        } else if ($("input:radio[name='agreement_type']:checked").val() == "url") {
+            $('.agreement-url').show();
+            $('.agreement-default').hide();
+            $('.agreement-pdf').hide();
+        }
+    }).trigger('change');
+
+    // 旅行条件書
+    $('[name=condition_type]').change(function() {
+        if ($("input:radio[name='condition_type']:checked").val() == "pdf") {
+            $('.condition-pdf').show();
+            $('.condition-url').hide();
+        } else if ($("input:radio[name='condition_type']:checked").val() == "url") {
+            $('.condition-url').show();
+            $('.condition-pdf').hide();
+        }
+    }).trigger('change');
+
+    // プライバシーポリシー
+    $('[name=policy_type]').change(function() {
+        if ($("input:radio[name='policy_type']:checked").val() == "pdf") {
+            $('.policy-pdf').show();
+            $('.policy-url').hide();
+        } else if ($("input:radio[name='policy_type']:checked").val() == "url") {
+            $('.policy-url').show();
+            $('.policy-pdf').hide();
+        }
+    }).trigger('change');
+
+    // 旅行業務取扱料金表
+    $('[name=charges_type]').change(function() {
+        if ($("input:radio[name='charges_type']:checked").val() == "pdf") {
+            $('.charges-pdf').show();
+            $('.charges-url').hide();
+        } else if ($("input:radio[name='charges_type']:checked").val() == "url") {
+            $('.charges-url').show();
+            $('.charges-pdf').hide();
+        }
+    }).trigger('change');
+ });
 
 /***************************
 アコーディオン

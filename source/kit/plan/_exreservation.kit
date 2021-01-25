@@ -1,0 +1,29 @@
+<section class="ex-reservation input-area message">
+    <h2 class="conts-ttl subtitle message-header">
+        予約先
+        <span class="icon">
+          <i class="fa fa-plus-circle"></i>
+        </span>
+    </h2>
+    <div class="conts-body message-body">
+        <span class="control help">外部サイトを選択した場合は、リンク先URLを入力してください。</span>
+
+        <div class="control">
+            <label class="label">予約サイト</label>
+            <p class="control">
+                <label class="radio">
+                    <input type="radio" name="reservation-select" value="flat" checked> FLAT
+                </label>
+                <label class="radio">
+                    <input type="radio" name="reservation-select" value="external"> 外部サイト
+                </label>
+            </p>
+        </div>
+        <div class="control ex-url">
+            <label class="label">外部サイトURL<span class="must">必須</span></label>
+            <p class="control">
+              <input class="input is-danger" type="text" placeholder="例：https://sample.jp/reservation/">
+            </p>
+        </div>
+    </div>
+</section>

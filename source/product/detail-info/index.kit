@@ -69,6 +69,8 @@
 
 <!-- @import '/source/kit/plan/contract' -->
 
+<!-- @import '/source/kit/plan/exreservation' -->
+
 <!-- @import '/source/kit/plan/plan-course' -->
 
 <!-- @import '/source/kit/plan/survey' -->
@@ -221,6 +223,15 @@ $(function() {
      //     }
      // }).trigger('change');
 
+     // 販売方式
+     $('[name=language-select]').change(function() {
+         if ($("input:radio[name='language-select']:checked").val() == "normal") {
+             $('.language-wrap').hide();
+         } else if ($("input:radio[name='language-select']:checked").val() == "contract") {
+             $('.language-wrap').show();
+         }
+     }).trigger('change');
+
      // 約款
     $('[name=agreement_type]').change(function() {
         if ($("input:radio[name='agreement_type']:checked").val() == "default") {
@@ -268,6 +279,15 @@ $(function() {
         } else if ($("input:radio[name='charges_type']:checked").val() == "url") {
             $('.charges-url').show();
             $('.charges-pdf').hide();
+        }
+    }).trigger('change');
+
+    // 予約先
+    $('[name=reservation-select]').change(function() {
+        if ($("input:radio[name='reservation-select']:checked").val() == "flat") {
+            $('.ex-url').hide();
+        } else if ($("input:radio[name='reservation-select']:checked").val() == "external") {
+            $('.ex-url').show();
         }
     }).trigger('change');
  });

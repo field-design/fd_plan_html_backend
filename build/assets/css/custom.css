@@ -701,4 +701,23 @@ select.is-danger {
           color: #00d1b2;
           text-decoration: none;
           opacity: .7; }
+
+/* =====================
+  CSV Download btn
+===================== */
+.download-btn {
+  margin-bottom: 10px;
+  text-align: right; }
+  .download-btn .download.is-outlined {
+    font-size: 1rem;
+    font-weight: bold;
+    border-color: #2f69f2;
+    color: #2f69f2; }
+    @media screen and (max-width: 479px) {
+      .download-btn .download.is-outlined {
+        font-size: .75rem; } }
+    .download-btn .download.is-outlined:hover {
+      background-color: #2f69f2;
+      border-color: #2f69f2;
+      color: #fff; }
 /*# sourceMappingURL=custom.css.map */

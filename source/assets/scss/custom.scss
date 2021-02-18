@@ -865,6 +865,30 @@ select.is-danger {
     }
 }
 
+/* =====================
+  CSV Download btn
+===================== */
+.download-btn {
+  margin-bottom: 10px;
+  text-align: right;
+  .download {
+    &.is-outlined {
+      font-size: 1rem;
+      font-weight: bold;
+      border-color: #2f69f2;
+      color: #2f69f2;
+      @include max-sm {
+          font-size: .75rem;
+      }
+      &:hover {
+        background-color: #2f69f2;
+        border-color: #2f69f2;
+        color: #fff;
+      }
+    }
+  }
+}
+
 // icons
 // @import "_icomoon";
 

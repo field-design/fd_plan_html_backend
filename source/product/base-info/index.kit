@@ -169,9 +169,9 @@ $( function() {
 // 予約先
 $('[name=payment-select]').change(function() {
     if ($("input:radio[name='payment-select']:checked").val() == "with_payment") {
-        $('.ex-url').hide();
+        $('.no-payment').hide();
     } else if ($("input:radio[name='payment-select']:checked").val() == "no_payment") {
-        $('.ex-url').show();
+        $('.no-payment').show();
     }
 }).trigger('change');
 

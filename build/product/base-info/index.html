@@ -221,6 +221,35 @@
 
 <section class="input-area message plan-outline">
     <h2 class="conts-ttl subtitle message-header">
+        管理項目
+        <!-- <span class="icon">
+          <i class="fa fa-plus-circle"></i>
+        </span> -->
+    </h2>
+    <div class="conts-body message-body">
+        <div class="control">
+            <label class="label">GMOでの決済あり・なし</label>
+            <p class="control">
+                <label class="radio">
+                    <input type="radio" name="payment-select" value="with_payment" checked> あり
+                </label>
+                <label class="radio">
+                    <input type="radio" name="payment-select" value="no_payment"> なし
+                </label>
+            </p>
+        </div>
+        <div class="control no-payment">
+            <label class="label">予約完了メールへの追記事項</label>
+            <p class="control">
+              <textarea class="textarea limited" placeholder=""></textarea>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="input-area message plan-outline">
+    <h2 class="conts-ttl subtitle message-header">
         基本情報
         <!-- <span class="icon">
           <i class="fa fa-plus-circle"></i>
@@ -700,6 +729,15 @@ $( function() {
     //     $( this ).parent().remove();
     // });
 } );
+
+// 予約先
+$('[name=payment-select]').change(function() {
+    if ($("input:radio[name='payment-select']:checked").val() == "with_payment") {
+        $('.no-payment').hide();
+    } else if ($("input:radio[name='payment-select']:checked").val() == "no_payment") {
+        $('.no-payment').show();
+    }
+}).trigger('change');
 
 /***************************
 アコーディオン

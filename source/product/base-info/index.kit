@@ -63,6 +63,8 @@
 
 <div class="">
 
+<!-- @import '/source/kit/plan/administrator-item' -->
+
 <!-- @import '/source/kit/plan/plan-outline' -->
 
 <!-- @import '/source/kit/plan/plan-detail' -->
@@ -163,6 +165,15 @@ $( function() {
     //     $( this ).parent().remove();
     // });
 } );
+
+// 予約先
+$('[name=payment-select]').change(function() {
+    if ($("input:radio[name='payment-select']:checked").val() == "with_payment") {
+        $('.ex-url').hide();
+    } else if ($("input:radio[name='payment-select']:checked").val() == "no_payment") {
+        $('.ex-url').show();
+    }
+}).trigger('change');
 
 /***************************
 アコーディオン

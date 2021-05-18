@@ -478,6 +478,9 @@ body.login {
     }
 }
 
+::placeholder {
+  color: rgba(0,0,0,.3) !important;
+}
 :placeholder-shown {
     color: rgba(0,0,0,.4);
 }

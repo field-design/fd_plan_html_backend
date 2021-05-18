@@ -370,6 +370,21 @@ body.login footer {
   .control.column-flex span {
     position: relative; }
 
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3) !important; }
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3) !important; }
+
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3) !important; }
+
+::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3) !important; }
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.3) !important; }
+
 :-moz-placeholder-shown {
   color: rgba(0, 0, 0, 0.4); }
 
@@ -588,7 +603,6 @@ select.is-danger {
     .timetable table tr th {
       width: 100px; }
       .timetable table tr th.fixed-ttl {
-        position: -webkit-sticky;
         position: sticky;
         left: 0;
         background: #eee;

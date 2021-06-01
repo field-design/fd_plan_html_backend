@@ -317,6 +317,38 @@
 
 
 /* =====================
+  product-step-nav-list
+===================== */
+.product-step-nav-list {
+  display: flex;
+  margin-top: 2.5rem;
+  @include max-md {
+    flex-wrap: wrap;
+  }
+  .column {
+    padding: .25rem;
+    @include max-md {
+      flex: 1 1 30%;
+      width: 30%;
+    }
+    p {
+      text-align: center;
+      border: 1px solid #4a4a4a;
+      border-radius: 4px;
+      padding: .15rem;
+    }
+    &.is-current {
+      p {
+        color: #FFF;
+        border-color: #23d160;
+        background-color: #23d160;
+      }
+    }
+  }
+}
+
+
+/* =====================
   base-info styles
 ===================== */
 .step-btn-field {

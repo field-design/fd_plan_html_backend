@@ -331,14 +331,22 @@
       flex: 1 1 30%;
       width: 30%;
     }
-    p {
+    a {
+      display: inline-block;
+      color: #4a4a4a;
       text-align: center;
+      width: 100%;
       border: 1px solid #4a4a4a;
       border-radius: 4px;
       padding: .15rem;
+      &:hover {
+        color: #FFF;
+        border-color: #23d160;
+        background-color: #23d160;
+      }
     }
     &.is-current {
-      p {
+      a {
         color: #FFF;
         border-color: #23d160;
         background-color: #23d160;

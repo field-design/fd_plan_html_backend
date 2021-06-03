@@ -252,12 +252,19 @@
             -ms-flex: 1 1 30%;
                 flex: 1 1 30%;
         width: 30%; } }
-    .product-step-nav-list .column p {
+    .product-step-nav-list .column a {
+      display: inline-block;
+      color: #4a4a4a;
       text-align: center;
+      width: 100%;
       border: 1px solid #4a4a4a;
       border-radius: 4px;
       padding: .15rem; }
-    .product-step-nav-list .column.is-current p {
+      .product-step-nav-list .column a:hover {
+        color: #FFF;
+        border-color: #23d160;
+        background-color: #23d160; }
+    .product-step-nav-list .column.is-current a {
       color: #FFF;
       border-color: #23d160;
       background-color: #23d160; }

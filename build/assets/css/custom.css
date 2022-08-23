@@ -323,7 +323,13 @@ body.login footer {
 .order-list .order-name {
   text-align: center; }
 
+.order-list .order-kana {
+  text-align: center; }
+
 .order-list .order-quantity {
+  text-align: center; }
+
+.order-list .order-tel {
   text-align: center; }
 
 .order-list .order-payment {

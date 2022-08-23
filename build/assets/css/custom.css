@@ -603,6 +603,15 @@ select.is-danger {
 .btn-timeset {
   padding: 16px 0; }
 
+.btn-batch_entry {
+  color: #fff;
+  background-color: #e5a01e;
+  border: 1px solid #e5a01e; }
+  .btn-batch_entry:hover {
+    color: #e5a01e;
+    background-color: inherit;
+    border: 1px solid #e5a01e; }
+
 .remodal-wrapper .remodal {
   max-width: 760px;
   border-radius: 6px; }

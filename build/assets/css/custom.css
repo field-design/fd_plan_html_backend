@@ -613,7 +613,7 @@ select.is-danger {
     border: 1px solid #e5a01e; }
 
 .remodal-wrapper .remodal {
-  max-width: 760px;
+  max-width: 900px;
   border-radius: 6px; }
   .remodal-wrapper .remodal .remodal-close {
     left: auto;

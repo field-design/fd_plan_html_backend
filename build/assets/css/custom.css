@@ -562,6 +562,14 @@ select.is-danger {
   float: right; }
 
 /* =====================
+  category
+===================== */
+.plan-category .checkbox {
+  margin-right: 1rem; }
+  .plan-category .checkbox.parent {
+    display: none; }
+
+/* =====================
   price
 ===================== */
 .plan-price .course {

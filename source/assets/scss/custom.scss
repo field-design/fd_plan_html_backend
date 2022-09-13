@@ -669,6 +669,19 @@ select.is-danger {
 
 
 /* =====================
+  category
+===================== */
+.plan-category {
+    .checkbox {
+        margin-right: 1rem;
+        &.parent {
+            display: none;
+        }
+    }
+}
+
+
+/* =====================
   price
 ===================== */
 .plan-price {

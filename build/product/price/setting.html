@@ -138,6 +138,13 @@
   </ul>
 
   <p class="menu-label">
+    カテゴリ
+  </p>
+  <ul class="menu-list">
+    <li><a href="/category">カテゴリ設定</a></li>
+  </ul>
+
+  <p class="menu-label">
     設定
   </p>
   <ul class="menu-list">
@@ -200,7 +207,7 @@
 
 <div class="">
 
-<section class="input-area price">
+<!-- <section class="input-area price">
 
     <div class="conts-body">
 
@@ -232,7 +239,7 @@
         <div class="control">
             <div class="help counter">残り<span class="count">16</span>文字</strong></div>
             <input class="input is-danger limited" type="text" placeholder="例：人数や台数など" maxlength="16">
-        </div>
+        </div> -->
 
         <div class="notification">
             <button class="delete" onclick="((this).parentNode.remove())"></button>
@@ -262,7 +269,16 @@
                 </div>
             </div>
             <div class="quantity-price">
-                <label class="label">数量・価格</label>
+                <label class="label">数量・価格<span class="help">区分フリーを選択した場合は、「数量◯◯まで◯◯円」の項目を入力してください</span></label>
+                <p class="control column-flex has-icon has-icon-right">
+                    <span>数量１あたり<span class="must">必須</span>　</span>
+                    <span>
+                        <input class="input is-danger" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                </p>
                 <p class="control column-flex has-icon has-icon-right">
                     <span>数量　</span>
                     <span class="select">
@@ -283,15 +299,6 @@
                     <span>　まで　</span>
                     <span>
                         <input class="input" type="text" placeholder="例：2000">
-                        <span class="icon is-small">
-                          円
-                        </span>
-                    </span>
-                </p>
-                <p class="control column-flex has-icon has-icon-right">
-                    <span>数量１あたり<span class="must">必須</span>　</span>
-                    <span>
-                        <input class="input is-danger" type="text" placeholder="例：2000">
                         <span class="icon is-small">
                           円
                         </span>
@@ -376,7 +383,16 @@
                 </div>
             </div>
             <div class="quantity-price">
-                <label class="label">数量・価格</label>
+                <label class="label">数量・価格<span class="help">区分フリーを選択した場合は、「数量◯◯まで◯◯円」の項目を入力してください</span></label>
+                <p class="control column-flex has-icon has-icon-right">
+                    <span>数量１あたり<span class="must">必須</span>　</span>
+                    <span>
+                        <input class="input is-danger" type="text" placeholder="例：2000">
+                        <span class="icon is-small">
+                          円
+                        </span>
+                    </span>
+                </p>
                 <p class="control column-flex has-icon has-icon-right">
                     <span>数量　</span>
                     <span class="select">
@@ -397,15 +413,6 @@
                     <span>　まで　</span>
                     <span>
                         <input class="input" type="text" placeholder="例：2000">
-                        <span class="icon is-small">
-                          円
-                        </span>
-                    </span>
-                </p>
-                <p class="control column-flex has-icon has-icon-right">
-                    <span>数量１あたり<span class="must">必須</span>　</span>
-                    <span>
-                        <input class="input is-danger" type="text" placeholder="例：2000">
                         <span class="icon is-small">
                           円
                         </span>
@@ -471,8 +478,8 @@
             <span>代金を追加</span>
           </a>
         </div>
-    </div>
-</section>
+    <!-- </div> /conts-body 
+</section> -->
 
 
 </div>
@@ -520,7 +527,7 @@
     <div class="has-text-centered">
       <p class="copyright">
           © <script type="text/javascript">myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear);</script> 株式会社フィールドデザイン<br />
-          操作方法についてのお問い合わせ先：026-227-8955
+          操作方法についてのお問い合わせ先：026-227-8955（平日 10:00〜18:00）
       </p>
     </div>
   </div>

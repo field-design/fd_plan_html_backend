@@ -434,6 +434,9 @@ body.login {
     .order-amount {
         text-align: right;
     }
+    .order-affiliate_amount {
+        text-align: right;
+    }
     .order-status {
         text-align: center;
     }
@@ -444,6 +447,18 @@ body.login {
         text-align: center;
     }
     .order-edit {
+        text-align: center;
+    }
+    .order-plan_name {
+        text-align: center;
+    }
+    .order-affiliate {
+        text-align: center;
+    }
+    .order-tariff {
+        text-align: center;
+    }
+    .order-url {
         text-align: center;
     }
 }
@@ -961,6 +976,64 @@ select.is-danger {
     }
   }
 }
+
+
+/* =====================
+  Affiliate
+===================== */
+.affiliate {
+  .message-header {
+      margin-bottom: 0;
+  }
+  .message-body {
+    padding-top: 1.5rem;
+      table {
+          th {
+              vertical-align: middle;
+          }
+      }
+      .button {
+          margin: 2px;
+      }
+  }
+  &.section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &.affiliate-list__wrap {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .affiliate-list {
+    th, td {
+      font-size: 0.95rem;
+    }
+    th {
+        text-align: center;
+        vertical-align: middle;
+    }
+    td {
+        text-align: center;
+        vertical-align: middle;
+        &.affiliate-name {
+            text-align: left;
+        }
+        &.affiliate-plan_name {
+            text-align: left;
+        }
+        &.affiliate-amount {
+            text-align: right;
+        }
+        &.affiliate-url {
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+  }
+}
+
+
 
 // icons
 // @import "_icomoon";

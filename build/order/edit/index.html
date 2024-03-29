@@ -320,6 +320,83 @@
                 <input type="file" name="main_img" id="main_img" style="display:none;">
             </form>
         </div>
+        <!-- 注文者情報編集ボタンを押した場合の記述 -->
+        <form>
+          <table class="order-edit table is-bordered is-fullwidth">
+            <tbody>
+              <tr>
+                  <th>お名前</th>
+                  <td><input class="input" type="text" value="山田 太朗"></td>
+              </tr>
+              <tr>
+                  <th>フリガナ</th>
+                  <td><input class="input" type="text" value="ヤマダ タロウ"></td>
+              </tr>
+              <tr>
+                  <th>メールアドレス</th>
+                  <td><input class="input" type="email" value="abc@example.com"></td>
+              </tr>
+              <tr>
+                  <th>電話番号</th>
+                  <td><input class="input" type="tel" value="000-0000-0000"></td>
+              </tr>
+              <tr>
+                  <th>携帯番号</th>
+                  <td><input class="input" type="tel" value="000-0000-0000"></td>
+              </tr>
+              <tr>
+                  <th>住所</th>
+                  <td><textarea class="textarea limited">123-4567&#13;都道府県 市区町村 丁目番地 ビルマンション名</textarea></td>
+              </tr>
+              <tr>
+                  <th>生年月日</th>
+                  <td>
+                    <div>
+                      <div class="columns is-vcentered is-mobile">
+                        <div class="column">
+                          <input name="number" class="input " type="text" min="0" value="0000年">
+                        </div>
+                        <div class="column">
+                          <input name="number[]" class="input " type="text" min="0" value="00月">
+                        </div>
+                        <div class="column">
+                          <input name="number[]" class="input " type="text" min="0" value="00日">
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>性別</th>
+                  <td>
+                    <div class="input-field">
+                      <input type="radio" id="male" name="sex" value="1" checked="checked"> <label for="male" class="radio">男性</label>
+                      <input type="radio" id="female" name="sex" value="2"> <label for="female" class="radio">女性</label>
+                      <input type="radio" id="other" name="sex" value="3"> <label for="other" class="radio">その他</label>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>職業</th>
+                  <td><input class="input" type="text" value="会社員"></td>
+              </tr>
+              <tr>
+                  <th>備考欄</th>
+                  <td><textarea class="textarea limited">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。&#13;この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れていま</textarea></td>
+              </tr>
+              <tr>
+                  <th>DM送信</th>
+                  <td>
+                    <div class="input-field">
+                      <input type="radio" id="mail-yes" name="mail-send" value="1" checked="checked"> <label for="mail-yes" class="radio">はい</label>
+                      <input type="radio" id="mail-no" name="mail-send" value="0"> <label for="mail-no" class="radio">いいえ</label>
+                  </div>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+        <!-- /注文者情報編集ボタンを押した場合の記述 -->
         <div class="control save-point">
             <p class="has-text-centered">
                 <a class="button is-success">

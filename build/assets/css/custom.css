@@ -28,6 +28,20 @@
 .breadcrumbs span {
   vertical-align: middle; }
 
+.pagination ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination ul li {
+    margin: 0 5px; }
+
 .alert {
   padding: 0 1.5rem; }
 
@@ -502,7 +516,6 @@ select.is-danger {
   height: 0;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out 0s;
-  -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s; }
 
 /* =====================
@@ -563,7 +576,6 @@ select.is-danger {
   display: block;
   padding: 10px;
   -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
   transition: all .2s ease; }
 
 .ui-datepicker-calendar td a:hover {
@@ -597,7 +609,6 @@ select.is-danger {
   height: auto;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out 0s;
-  -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s; }
 
 .lend-time-price {
@@ -605,7 +616,6 @@ select.is-danger {
   height: 0;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out 0s;
-  -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s; }
   .lend-time-price .time-setting .input {
     width: 80px; }
@@ -618,7 +628,6 @@ select.is-danger {
   height: auto;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out 0s;
-  -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s; }
 
 .lend-time-calendar {
@@ -626,7 +635,6 @@ select.is-danger {
   height: 0;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out 0s;
-  -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s; }
   .lend-time-calendar .time-setting .input {
     width: 80px; }
@@ -757,7 +765,6 @@ select.is-danger {
       color: #333;
       background-color: #e9e9e9;
       -webkit-transition: all .2s ease;
-      -o-transition: all .2s ease;
       transition: all .2s ease; }
       @media screen and (max-width: 479px) {
         .faq .acd .acd-nav .decimal {
@@ -786,7 +793,6 @@ select.is-danger {
       .faq .acd .acd-nav > .answer a {
         text-decoration: underline;
         -webkit-transition: all .2s ease;
-        -o-transition: all .2s ease;
         transition: all .2s ease; }
         .faq .acd .acd-nav > .answer a:hover {
           color: #00d1b2;

@@ -39,6 +39,18 @@
     }
 }
 
+.pagination {
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      margin: 0 5px;
+    }
+  }
+}
+
 .alert {
   padding: 0 1.5rem;
 }

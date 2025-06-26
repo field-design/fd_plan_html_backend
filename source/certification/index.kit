@@ -25,22 +25,24 @@
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column is-5">
-                    <h2 class="title is-4">2段階認証コードを入力してログイン</h2>
+                    <zh2 class="title is-4">2段階認証コードを入力してログイン</zh2>
                     <div class="box">
                         <p class="txt">メールで受け取った認証コードを入力してください。</p>
                         <p class="txt">メールアドレス：aaa*******@aaa.com</p>
-                        <div class="wrap mt-20">
-                          <p class="control">
+                        <form action="" method="POST">
+                          <div class="wrap mt-20">
+                            <p class="control">
                               <input class="input" type="text" placeholder="6桁のコードを入力">
-                          </p>
-                          <p class="control">
+                            </p>
+                            <p class="control">
                               <button class="button is-primary is-fullwidth" disabled>認証</button>
-                          </p>
-                        </div>
-                        <hr>
-                        <p class="has-text-centered has-text-link">
-                            <a href="#">認証コードを再送する</a>
-                        </p>
+                            </p>
+                          </div>
+                          <hr>
+                          <div class="authentication has-text-centered">
+                            <button class="button is-text">認証コードを再送する</button>
+                          </div>
+                        </form>
                     </div>
                 </div>
             </div>

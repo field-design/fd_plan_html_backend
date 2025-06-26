@@ -394,6 +394,7 @@ body.certification {
     margin-inline: auto;
   }
   .title {
+    display: block;
     text-align: center;
   }
   .box {
@@ -408,8 +409,15 @@ body.certification {
       max-width: 200px;
       margin-inline: auto;
     }
-    a {
+  }
+  .authentication {
+    button {
       color: #4259FF;
+      text-decoration: underline;
+      border: none;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   footer {

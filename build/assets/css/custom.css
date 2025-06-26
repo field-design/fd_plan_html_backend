@@ -307,6 +307,7 @@ body.certification .column {
   margin-inline: auto; }
 
 body.certification .title {
+  display: block;
   text-align: center; }
 
 body.certification .box {
@@ -319,8 +320,13 @@ body.certification .box {
   body.certification .box .wrap {
     max-width: 200px;
     margin-inline: auto; }
-  body.certification .box a {
-    color: #4259FF; }
+
+body.certification .authentication button {
+  color: #4259FF;
+  text-decoration: underline;
+  border: none; }
+  body.certification .authentication button:hover {
+    text-decoration: none; }
 
 body.certification footer {
   background-color: transparent; }
